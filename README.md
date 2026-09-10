@@ -2,25 +2,31 @@
 
 Compêndio de orações católicas tradicionais e horas do Ofício Divino em edição bilíngue (**Latim – Português**).
 
-O objetivo deste projeto é proporcionar textos com:
-1. **Tradução ritmada e fiel à ordem do latim**, facilitando a recitação e o acompanhamento palavra por palavra.
-2. **Formato Web/Mobile responsivo** com Modo Escuro (Dark Mode) para rezar no celular antes de dormir.
-3. **Formato Impresso em Livreto A5 (Dobra de A4)** pronto para impressão doméstica em 2 folhas de papel.
+🌐 **Acesse online (Web & Celular):**  
+👉 [**aluiziotomazelli.github.io/orationes**](https://aluiziotomazelli.github.io/orationes/)  
+🌙 **Acesso direto ao Completório:** [**aluiziotomazelli.github.io/orationes/completorium/**](https://aluiziotomazelli.github.io/orationes/completorium/)
+
+---
+
+## 🎯 Proposta do Projeto
+
+1. **Tradução ritmada e fiel à ordem do latim:** Facilita a recitação em coro/voz alta e o acompanhamento imediato palavra por palavra.
+2. **Formato Web/Mobile responsivo:** Com Modo Escuro (*Dark Mode*) e controle dinâmico de fonte para rezar no smartphone antes de dormir.
+3. **Formato Impresso em Livreto A5 (Dobra de A4):** Imposição pronta para impressão doméstica em 2 folhas de papel comum.
 
 ---
 
 ## 📁 Estrutura do Repositório
 
-### `completorium/` (Completas — Rubricas de 1960)
-
 | Arquivo | Descrição |
 | :--- | :--- |
-| [**`completorium.html`**](completorium/completorium.html) | **Aplicativo Web / Mobile Offline**. Contém alternador de Modo Escuro (🌙), ajuste dinâmico de tamanho de fonte (`A+` / `A−`) e visualização 50/50 em duas colunas. |
-| [**`completorium_livreto_A4_pronto_impressao.pdf`**](completorium/completorium_livreto_A4_pronto_impressao.pdf) | **PDF de Livreto A4 com Imposição Pronta**. Formato de 8 páginas A5 distribuídas em 2 folhas A4 prontas para dobrar ao meio. |
-| [**`completorium_celular.pdf`**](completorium/completorium_celular.pdf) | **PDF formatado sob medida para tela de smartphone** (105mm × 185mm) com margens ultrafinas. |
-| [**`completorium_meia_folha_A5.pdf`**](completorium/completorium_meia_folha_A5.pdf) | **PDF em páginas sequenciais tamanho A5** (meia folha A4). |
-| [**`completorium_bilingue.md`**](completorium/completorium_bilingue.md) | Texto bilíngue completo e revisado em Markdown. |
-| [**`completorium_latim.md`**](completorium/completorium_latim.md) | Texto integral apenas em latim litúrgico. |
+| [**`index.html`**](index.html) | Página inicial do portal para o **GitHub Pages**. |
+| [**`completorium/completorium.html`**](completorium/completorium.html) | **Aplicativo Web / Mobile Offline**. Contém alternador de Modo Escuro (🌙), ajuste dinâmico de tamanho de fonte (`A+` / `A−`) e visualização 50/50 em duas colunas. |
+| [**`completorium/completorium_livreto_A4_pronto_impressao.pdf`**](completorium/completorium_livreto_A4_pronto_impressao.pdf) | **PDF de Livreto A4 com Imposição Pronta**. Formato de 8 páginas A5 distribuídas em 2 folhas A4 prontas para dobrar ao meio. |
+| [**`completorium/completorium_celular.pdf`**](completorium/completorium_celular.pdf) | **PDF formatado sob medida para tela de smartphone** (105mm × 185mm) com margens ultrafinas. |
+| [**`completorium/completorium_meia_folha_A5.pdf`**](completorium/completorium_meia_folha_A5.pdf) | **PDF em páginas sequenciais tamanho A5** (meia folha A4). |
+| [**`completorium/completorium_bilingue.md`**](completorium/completorium_bilingue.md) | Texto bilíngue completo e revisado em Markdown. |
+| [**`completorium/completorium_latim.md`**](completorium/completorium_latim.md) | Texto integral apenas em latim litúrgico. |
 
 ---
 
