@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Completório • Livreto A4 (2 Folhas)</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: white;
+      color: #1a1a1a;
+      font-family: "EB Garamond", "Cardo", "Georgia", "Liberation Serif", serif;
+      font-size: 8.8pt;
+      line-height: 1.28;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* A4 Sheet (297mm x 210mm) */
+    .sheet {
+      width: 297mm;
+      height: 210mm;
+      page-break-after: always;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Fold Guide Line (center) */
+    .sheet::after {
+      content: "";
+      position: absolute;
+      top: 6mm;
+      bottom: 6mm;
+      left: 148.5mm;
+      border-left: 1px dashed #ddd;
+    }
+
+    /* A5 Page Panel (148.5mm x 210mm) */
+    .page-panel {
+      width: 148.5mm;
+      height: 210mm;
+      padding: 9mm 9mm 8mm 9mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .page-panel.left {
+      padding-right: 11mm; /* Extra margin near fold */
+    }
+
+    .page-panel.right {
+      padding-left: 11mm; /* Extra margin near fold */
+    }
+
+    .page-content {
+      flex: 1;
+    }
+
+    .page-footer {
+      text-align: center;
+      font-size: 7.5pt;
+      color: #777;
+      border-top: 0.5px solid #e0e0e0;
+      padding-top: 1.5mm;
+      margin-top: 1mm;
+    }
+
+    /* Typography */
+    h1 {
+      text-align: center;
+      color: #990000;
+      font-size: 11pt;
+      margin: 0 0 1.5mm 0;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .sub-head {
+      text-align: center;
+      font-size: 7.5pt;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2mm;
+    }
+
+    h2 {
+      text-align: center;
+      color: #990000;
+      font-size: 8.8pt;
+      margin: 1.5mm 0 1mm 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 0.5px solid #d4c5b9;
+      padding-bottom: 0.5mm;
+    }
+
+    h3 {
+      text-align: center;
+      color: #990000;
+      font-size: 8.5pt;
+      margin: 1mm 0 0.5mm 0;
+    }
+
+    .rubric {
+      color: #990000;
+      font-style: italic;
+      font-size: 7.8pt;
+    }
+
+    .v-sym, .r-sym, .cross, .asterisk {
+      color: #990000;
+      font-weight: bold;
+    }
+
+    .v-num {
+      color: #990000;
+      font-size: 7.5pt;
+      font-weight: bold;
+    }
+
+    /* Two-column layout table */
+    table.prayer-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      margin-bottom: 1mm;
+    }
+
+    table.prayer-table td {
+      vertical-align: top;
+      padding: 1px 2px;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    table.prayer-table td.col-lat {
+      width: 50%;
+      border-right: 0.5px solid #e2dad2;
+      padding-right: 4px;
+    }
+
+    table.prayer-table td.col-pt {
+      width: 50%;
+      padding-left: 4px;
+    }
+
+    .hymn-verse {
+      margin-bottom: 1.5mm;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================== -->
+  <!-- FOLHA 1 - FRENTE (Página 8 à esquerda | Página 1 à direita) -->
+  <!-- ======================================================== -->
+  <div class="sheet">
+    
+    <!-- PÁGINA 8 (Contracapa / Conclusão e Salve Rainha) -->
+    <div class="page-panel left">
+      <div class="page-content">
+        <h2>Conclusio & Benedictio</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Dómine, exáudi oratiónem meam.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Senhor, ouvi a minha oração.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Et clamor meus ad te véniat.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> E o meu clamor chegue até Vós.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Benedicámus Dómino.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Bendigamos ao Senhor.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Deo grátias.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Graças a Deus.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="rubric">Benedíctio:</span> Benedícat et custódiat nos <span class="cross">✠</span> omnípotens et miséricors Dóminus, Pater, et Fílius, et Spíritus Sanctus. <span class="r-sym">℟.</span> Amen.</td>
+            <td class="col-pt"><span class="rubric">Bênção:</span> Abençoe-nos e guarde-nos <span class="cross">✠</span> o Senhor onipotente e misericordioso, Pai, e Filho, e Espírito Santo. <span class="r-sym">℟.</span> Amém.</td>
+          </tr>
+        </table>
+
+        <h2>Antiphona finalis B.M.V. • Salve Regina</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat">
+              Salve, Regína, mater misericórdiæ;<br>
+              vita, dulcédo et spes nóstra, salve.<br>
+              Ad te clamámus éxsules fílii Hevæ.<br>
+              Ad te suspirámus geméntes et flentes<br>
+              in hac lacrimárum valle.<br>
+              Eia ergo, advocáta nostra,<br>
+              illos tuos misericórdes óculos ad nos convérte.<br>
+              Et Iesum, benedíctum fructum ventris tui,<br>
+              nobis post hoc exsílium osténde.<br>
+              O clemens, o pia, o dulcis Virgo María.
+            </td>
+            <td class="col-pt">
+              Salve Rainha, Mãe de Misericórdia,<br>
+              Vida, doçura e esperança nossa, salve!<br>
+              A Vós bradamos, os degredados filhos de Eva.<br>
+              A Vós suspiramos, gemendo e chorando<br>
+              neste vale de lágrimas.<br>
+              Eia, pois, advogada nossa,<br>
+              Esses Vossos olhos misericordiosos a nós volvei,<br>
+              E, depois desse desterro,<br>
+              Mostrai-nos Jesus, bendito fruto do Vosso Ventre.<br>
+              Ó Clemente, Ó Piedosa, Ó Doce Sempre Virgem Maria.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Ora pro nobis, sancta Dei Génetrix.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Rogai por nós, santa Mãe de Deus.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Ut digni efficiámur promissiónibus Christi.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Para que sejamos dignos das promessas de Cristo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">
+              <strong>Orémus.</strong> Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cuius commemoratióne lætámur, eius pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúndem Christum Dóminum nostrum. <span class="r-sym">℟.</span> Amen.
+            </td>
+            <td class="col-pt">
+              <strong>Oremos.</strong> Deus onipotente e eterno, que o corpo e a alma da gloriosa Virgem Mãe Maria, para merecer ser digna morada de vosso Filho, com a cooperação do Espírito Santo preparastes: dai que, alegrando-nos com a sua memória, pela sua piedosa intercessão sejamos livres dos males presentes e da morte eterna. Pelo mesmo Cristo, nosso Senhor. <span class="r-sym">℟.</span> Amém.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="cross">✠</span> <span class="v-sym">℣.</span> Divínum auxílium máneat semper nobíscum. <span class="r-sym">℟.</span> Amen.</td>
+            <td class="col-pt"><span class="cross">✠</span> <span class="v-sym">℣.</span> O auxílio divino permaneça sempre conosco. <span class="r-sym">℟.</span> Amém.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">8 • Ad Completorium</div>
+    </div>
+
+    <!-- PÁGINA 1 (Capa / Início) -->
+    <div class="page-panel right">
+      <div class="page-content">
+        <h1>AD COMPLETORIUM</h1>
+        <div class="sub-head">Divinum Officium • Rubricæ 1960</div>
+
+        <h2>Incipit • Início</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Iube, Dómine, benedícere.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Dignai-vos, Senhor, abençoar-nos.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="rubric">Benedíctio:</span> Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens.</td>
+            <td class="col-pt"><span class="rubric">Bênção:</span> Uma noite tranquila e um fim perfeito conceda-nos o Senhor onipotente.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Amen.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Amém.</td>
+          </tr>
+        </table>
+
+        <h2>Lectio Brevis • Leitura Breve (1 Pet 5:8-9)</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><strong>Fratres:</strong> Sóbrii estóte, et vigiláte: quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret: cui resístite fortes in fide.</td>
+            <td class="col-pt"><strong>Irmãos:</strong> Sede sóbrios e vigiai; porque o vosso adversário, o diabo, como leão a rugir, vos rodeia buscando a quem devorar: resisti-lhe fortes na fé.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Tu autem, Dómine, miserére nobis.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> E Vós, Senhor, tende misericórdia de nós.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Deo grátias.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Graças a Deus.</td>
+          </tr>
+        </table>
+
+        <h2>Initium • Exame de Consciência</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Adiutórium nostrum <span class="cross">✠</span> in nómine Dómini.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> O nosso auxílio está <span class="cross">✠</span> no nome do Senhor.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Qui fecit cælum et terram.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Que fez o céu e a terra.</td>
+          </tr>
+          <tr>
+            <td class="col-lat rubric">Pater noster secreto usque ad:</td>
+            <td class="col-pt rubric">Pai nosso em silêncio até:</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Et ne nos indúcas in tentatiónem:</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> E não nos deixeis cair em tentação:</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Sed líbera nos a malo.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Mas livrai-nos do mal.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">1 • Ad Completorium</div>
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- FOLHA 1 - VERSO (Página 2 à esquerda | Página 7 à direita) -->
+  <!-- ======================================================== -->
+  <div class="sheet">
+    
+    <!-- PÁGINA 2 (Confissão e Início do Ofício) -->
+    <div class="page-panel left">
+      <div class="page-content">
+        <h2>Confessio • Confissão</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat">
+              <strong>Confíteor</strong> Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: <span class="rubric">(percutit sibi pectus ter)</span> <strong>mea culpa, mea culpa, mea máxima culpa.</strong> Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
+            </td>
+            <td class="col-pt">
+              <strong>Confesso</strong> a Deus todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos, que pequei gravemente por pensamentos, palavras e obras: <span class="rubric">(bate três vezes no peito)</span> <strong>por minha culpa, minha culpa, minha máxima culpa.</strong> Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos, que rogueis por mim ao Senhor nosso Deus.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-lat"><strong>Misereátur</strong> nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. <span class="r-sym">℟.</span> Amen.</td>
+            <td class="col-pt"><strong>Compadeça-se</strong> de nós Deus todo-poderoso e, perdoados os nossos pecados, nos conduza à vida eterna. <span class="r-sym">℟.</span> Amém.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><strong>Indulgéntiam,</strong> <span class="cross">✠</span> absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. <span class="r-sym">℟.</span> Amen.</td>
+            <td class="col-pt"><strong>Indulgência,</strong> <span class="cross">✠</span> absolvição e remissão de nossos pecados conceda-nos o Senhor onipotente e misericordioso. <span class="r-sym">℟.</span> Amém.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Convérte nos, <span class="cross">✙</span> Deus, salutáris noster.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Convertei-nos, <span class="cross">✙</span> ó Deus, nosso Salvador.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Et avérte iram tuam a nobis.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> E afastai de nós a vossa ira.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Deus <span class="cross">✠</span> in adiutórium meum inténde.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Deus, <span class="cross">✠</span> vinde em meu auxílio.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Dómine, ad adiuvándum me festína.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Senhor, apressai-vos em socorrer-me.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Glória Patri, et Fílio, <span class="asterisk">*</span> et Spirítui Sancto.</td>
+            <td class="col-pt">Glória ao Pai e ao Filho <span class="asterisk">*</span> e ao Espírito Santo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Sicut erat in princípio, et nunc, et semper, <span class="asterisk">*</span> et in sǽcula sæculórum. Amen. Allelúia.</td>
+            <td class="col-pt">Como era no princípio, agora e sempre, <span class="asterisk">*</span> por todos os séculos dos séculos. Amém. Aleluia.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">2 • Ad Completorium</div>
+    </div>
+
+    <!-- PÁGINA 7 (Nunc Dimittis e Oração) -->
+    <div class="page-panel right">
+      <div class="page-content">
+        <h2>Canticum Simeonis • Nunc Dimíttis (Luc 2:29-32)</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><strong>Ant.</strong> Salva nos, <span class="asterisk">*</span> Dómine, vigilántes, custódi nos dormiéntes; ut vigilémus cum Christo, et requiescámus in pace.</td>
+            <td class="col-pt"><strong>Ant.</strong> Salvai-nos, <span class="asterisk">*</span> Senhor, acordados, guardai-nos dormindo; para que vigiemos com Cristo, e descansemos em pace.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">29</span> <span class="cross">✠</span> Nunc dimíttis servum tuum, Dómine, <span class="asterisk">*</span> secúndum verbum tuum in pace:</td>
+            <td class="col-pt"><span class="v-num">29</span> <span class="cross">✠</span> Agora podeis deixar o vosso servo ir, Senhor, <span class="asterisk">*</span> segundo a vossa palavra, em paz:</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">30</span> Quia vidérunt óculi mei <span class="asterisk">*</span> salutáre tuum,</td>
+            <td class="col-pt"><span class="v-num">30</span> Porque os meus olhos viram <span class="asterisk">*</span> a vossa salvação,</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">31</span> Quod parásti <span class="asterisk">*</span> ante fáciem ómnium populórum,</td>
+            <td class="col-pt"><span class="v-num">31</span> A qual preparastes <span class="asterisk">*</span> perante a face de todos os povos,</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">32</span> Lumen ad revelatiónem géntium, <span class="asterisk">*</span> et glóriam plebis tuæ Israël.</td>
+            <td class="col-pt"><span class="v-num">32</span> Luz para iluminar as nações, <span class="asterisk">*</span> e glória do vosso povo de Israel.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Glória Patri, et Fílio, <span class="asterisk">*</span> et Spirítui Sancto.</td>
+            <td class="col-pt">Glória ao Pai e ao Filho <span class="asterisk">*</span> e ao Espírito Santo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Sicut erat in princípio, et nunc, et semper, <span class="asterisk">*</span> et in sǽcula sæculórum. Amen.</td>
+            <td class="col-pt">Como era no princípio, agora e sempre, <span class="asterisk">*</span> por todos os séculos dos séculos. Amém.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><strong>Ant.</strong> Salva nos, Dómine, vigilántes, custódi nos dormiéntes; ut vigilémus cum Christo, et requiescámus in pace.</td>
+            <td class="col-pt"><strong>Ant.</strong> Salvai-nos, Senhor, acordados, guardai-nos dormindo; para que vigiemos com Cristo, e descansemos em paz.</td>
+          </tr>
+        </table>
+
+        <h2>Oratio • Oração</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Dómine, exáudi oratiónem meam.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Senhor, ouvi a minha oração.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Et clamor meus ad te véniat.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> E o meu clamor chegue até Vós.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">
+              <strong>Orémus.</strong> Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. <span class="r-sym">℟.</span> Amen.
+            </td>
+            <td class="col-pt">
+              <strong>Oremos.</strong> Visitai, Senhor, nós vos pedimos, esta morada, e todas as ciladas do inimigo para longe dela repeli: os vossos santos Anjos nela habitem, guardando-nos em paz; e a vossa bênção esteja sempre sobre nós. Por nosso Senhor Jesus Cristo, vosso Filho: que convosco vive e reina em unidade do Espírito Santo, Deus, por todos os séculos dos séculos. <span class="r-sym">℟.</span> Amém.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">7 • Ad Completorium</div>
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- FOLHA 2 - FRENTE (Página 6 à esquerda | Página 3 à direita) -->
+  <!-- ======================================================== -->
+  <div class="sheet">
+    
+    <!-- PÁGINA 6 (Hino e Capítulo) -->
+    <div class="page-panel left">
+      <div class="page-content">
+        <h2>Hymnus • Hino</h2>
+        <table class="prayer-table hymn-verse">
+          <tr>
+            <td class="col-lat">Te lucis ante términum,<br>Rerum Creátor, póscimus,<br>Ut pro tua cleméntia<br>Sis præsul et custódia.</td>
+            <td class="col-pt">Antes do findar da luz,<br>ó Criador de tudo, vos suplicamos:<br>que por vossa clemência<br>sejais nosso guia e proteção.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Procul recédant sómnia,<br>Et nóctium phantásmata;<br>Hostémque nostrum cómprime,<br>Ne polluántur córpora.</td>
+            <td class="col-pt">Para longe afastem-se os sonhos<br>e os fantasmas da noite;<br>o nosso inimigo refreai,<br>para não se mancharem os corpos.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Præsta, Pater piíssime,<br>Patríque compar Únice,<br>Cum Spíritu Paráclito<br>Regnans per omne sǽculum.<br>Amen.</td>
+            <td class="col-pt">Concedei-nos, Pai piíssimo,<br>e Vós, Filho Único igual ao Pai,<br>que com o Espírito Paráclito<br>reinais por todos os séculos.<br>Amém.</td>
+          </tr>
+        </table>
+
+        <h2>Capitulum & Responsorium breve (Ier 14:9)</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat">Tu autem in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos, Dómine, Deus noster. <span class="r-sym">℟.</span> Deo grátias.</td>
+            <td class="col-pt">Vós, porém, estais em nós, Senhor, e o vosso santo nome foi invocado sobre nós: não nos abandoneis, Senhor, nosso Deus. <span class="r-sym">℟.</span> Graças a Deus.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.br.</span> In manus tuas, Dómine, <span class="asterisk">*</span> Comméndo spíritum meum.</td>
+            <td class="col-pt"><span class="r-sym">℟.br.</span> Em vossas mãos, Senhor, <span class="asterisk">*</span> Entrego o meu espírito.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> In manus tuas, Dómine, <span class="asterisk">*</span> Comméndo spíritum meum.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Em vossas mãos, Senhor, <span class="asterisk">*</span> Entrego o meu espírito.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Redemísti nos, Dómine, Deus veritátis.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Vós nos resgatastes, Senhor, Deus da verdade.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Comméndo spíritum meum.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Entrego o meu espírito.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Glória Patri, et Fílio, <span class="asterisk">*</span> et Spirítui Sancto.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Glória ao Pai e ao Filho <span class="asterisk">*</span> e ao Espírito Santo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> In manus tuas, Dómine, <span class="asterisk">*</span> Comméndo spíritum meum.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> Em vossas mãos, Senhor, <span class="asterisk">*</span> Entrego o meu espírito.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-sym">℣.</span> Custódi nos, Dómine, ut pupíllam óculi.</td>
+            <td class="col-pt"><span class="v-sym">℣.</span> Guardai-nos, Senhor, como a pupila dos olhos.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="r-sym">℟.</span> Sub umbra alárum tuárum prótege nos.</td>
+            <td class="col-pt"><span class="r-sym">℟.</span> À sombra de vossas asas protegei-nos.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">6 • Ad Completorium</div>
+    </div>
+
+    <!-- PÁGINA 3 (Salmo 4) -->
+    <div class="page-panel right">
+      <div class="page-content">
+        <h2>Psalmi • Salmos</h2>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><strong>Ant.</strong> Miserére <span class="asterisk">*</span> mihi, Dómine, et exáudi oratiónem meam.</td>
+            <td class="col-pt"><strong>Ant.</strong> Tende piedade <span class="asterisk">*</span> de mim, Senhor, e ouvi a minha oração.</td>
+          </tr>
+        </table>
+
+        <h3>Psalmus 4</h3>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-num">2</span> Cum invocárem exaudívit me Deus iustítiæ meæ: <span class="asterisk">*</span> in tribulatióne dilatásti mihi.</td>
+            <td class="col-pt"><span class="v-num">2</span> Ao invocar-Vos, atendeu-me o Deus da minha justiça: <span class="asterisk">*</span> na tribulação me dilatastes o coração.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">2</span> Miserére mei, <span class="asterisk">*</span> et exáudi oratiónem meam.</td>
+            <td class="col-pt"><span class="v-num">2</span> Tende piedade de mim, <span class="asterisk">*</span> e ouvi a minha oração.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">3</span> Fílii hóminum, úsquequo gravi corde? <span class="asterisk">*</span> ut quid dilígitis vanitátem, et quǽritis mendácium?</td>
+            <td class="col-pt"><span class="v-num">3</span> Filhos dos homens, até quando tereis coração pesado? <span class="asterisk">*</span> Por que amais a vaidade e buscais a mentira?</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">4</span> Et scitóte quóniam mirificávit Dóminus sanctum suum: <span class="asterisk">*</span> Dóminus exáudiet me cum clamávero ad eum.</td>
+            <td class="col-pt"><span class="v-num">4</span> Sabei, pois, que o Senhor engrandeceu o seu santo: <span class="asterisk">*</span> o Senhor há de ouvir-me quando a Ele clamar.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">5</span> Irascímini, et nolíte peccáre: <span class="asterisk">*</span> quæ dícitis in córdibus vestris, in cubílibus vestris compungímini.</td>
+            <td class="col-pt"><span class="v-num">5</span> Temei a ira e não pequeis: <span class="asterisk">*</span> do que dizeis em vossos corações, compungi-vos em vossos leitos.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">6</span> Sacrificáte sacrifícium iustítiæ, et speráte in Dómino. <span class="asterisk">*</span> Multi dicunt: Quis osténdit nobis bona?</td>
+            <td class="col-pt"><span class="v-num">6</span> Oferecei sacrifícios de justiça e esperai no Senhor. <span class="asterisk">*</span> Muitos dizem: Quem nos mostrará os bens?</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">7</span> Signátum est super nos lumen vultus tui, Dómine: <span class="asterisk">*</span> dedísti lætítiam in corde meo.</td>
+            <td class="col-pt"><span class="v-num">7</span> Gravada está sobre nós a luz de vossa face, Senhor: <span class="asterisk">*</span> destes alegria ao meu coração.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">8</span> A fructu fruménti, vini, et ólei sui <span class="asterisk">*</span> multiplicáti sunt.</td>
+            <td class="col-pt"><span class="v-num">8</span> Pela abundância de seu trigo, vinho e azeite <span class="asterisk">*</span> eles se enriqueceram.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">9</span> In pace in idípsum <span class="asterisk">*</span> dórmiam, et requiéscam;</td>
+            <td class="col-pt"><span class="v-num">9</span> Em paz, logo ao deitar-me, <span class="asterisk">*</span> dormirei e descansarei;</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">10</span> Quóniam tu, Dómine, singuláriter in spe <span class="asterisk">*</span> constituísti me.</td>
+            <td class="col-pt"><span class="v-num">10</span> Porque só Vós, Senhor, <span class="asterisk">*</span> na esperança me firmastes.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Glória Patri, et Fílio, <span class="asterisk">*</span> et Spirítui Sancto.</td>
+            <td class="col-pt">Glória ao Pai e ao Filho <span class="asterisk">*</span> e ao Espírito Santo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Sicut erat in princípio, et nunc, et semper, <span class="asterisk">*</span> et in sǽcula sæculórum. Amen.</td>
+            <td class="col-pt">Como era no princípio, agora e sempre, <span class="asterisk">*</span> por todos os séculos dos séculos. Amém.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">3 • Ad Completorium</div>
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- FOLHA 2 - VERSO (Página 4 à esquerda | Página 5 à direita) -->
+  <!-- ======================================================== -->
+  <div class="sheet">
+    
+    <!-- PÁGINA 4 (Salmo 90 - 1ª Parte) -->
+    <div class="page-panel left">
+      <div class="page-content">
+        <h3>Psalmus 90</h3>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-num">1</span> Qui hábitat in adiutório Altíssimi, <span class="asterisk">*</span> in protectióne Dei cæli commorábitur.</td>
+            <td class="col-pt"><span class="v-num">1</span> Quem habita sob o amparo do Altíssimo, <span class="asterisk">*</span> na proteção do Deus do céu habitará.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">2</span> Dicet Dómino: Suscéptor meus es tu, et refúgium meum: <span class="asterisk">*</span> Deus meus sperábo in eum.</td>
+            <td class="col-pt"><span class="v-num">2</span> Dirá ao Senhor: Vós sois o meu amparo e meu refúgio: <span class="asterisk">*</span> meu Deus, n’Ele esperarei.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">3</span> Quóniam ipse liberávit me de láqueo venántium, <span class="asterisk">*</span> et a verbo áspero.</td>
+            <td class="col-pt"><span class="v-num">3</span> Porque Ele me livrou do laço dos caçadores, <span class="asterisk">*</span> e da palavra áspera.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">4</span> Scápulis suis obumbrábit tibi: <span class="asterisk">*</span> et sub pennis eius sperábis.</td>
+            <td class="col-pt"><span class="v-num">4</span> Com suas asas te cobrirá, <span class="asterisk">*</span> e sob as suas penas esperarás.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">5</span> Scuto circúmdabit te véritas eius: <span class="asterisk">*</span> non timébis a timóre noctúrno,</td>
+            <td class="col-pt"><span class="v-num">5</span> Com escudo te cercará a sua verdade: <span class="asterisk">*</span> não temerás o terror da noite,</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">6</span> A sagítta volánte in die, a negótio perambulánte in ténebris: <span class="asterisk">*</span> ab incúrsu, et dæmónio meridiáno.</td>
+            <td class="col-pt"><span class="v-num">6</span> Nem a flecha que voa de dia, nem a peste que vaga nas trevas, <span class="asterisk">*</span> nem o ataque do demônio do meio-dia.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">7</span> Cadent a látere tuo mille, et decem míllia a dextris tuis: <span class="asterisk">*</span> ad te autem non appropinquábit.</td>
+            <td class="col-pt"><span class="v-num">7</span> Cairão mil ao teu lado e dez mil à tua direita: <span class="asterisk">*</span> a ti, porém, nada atingirá.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">8</span> Verúmtamen óculis tuis considerábis: <span class="asterisk">*</span> et retributiónem peccatórum vidébis.</td>
+            <td class="col-pt"><span class="v-num">8</span> Antes com teus próprios olhos contemplarás, <span class="asterisk">*</span> e verás o castigo dos pecadores.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">9</span> Quóniam tu es, Dómine, spes mea: <span class="asterisk">*</span> Altíssimum posuísti refúgium tuum.</td>
+            <td class="col-pt"><span class="v-num">9</span> Porque Vós sois, Senhor, a minha esperança: <span class="asterisk">*</span> no Altíssimo puseste o teu refúgio.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">10</span> Non accédet ad te malum: <span class="asterisk">*</span> et flagéllum non appropinquábit tabernáculo tuo.</td>
+            <td class="col-pt"><span class="v-num">10</span> Não chegará a ti o mal, <span class="asterisk">*</span> nem o flagelo se aproximará da tua tenda.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">4 • Ad Completorium</div>
+    </div>
+
+    <!-- PÁGINA 5 (Salmo 90 - 2ª Parte & Salmo 133) -->
+    <div class="page-panel right">
+      <div class="page-content">
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-num">11</span> Quóniam Ángelis suis mandávit de te: <span class="asterisk">*</span> ut custódiant te in ómnibus viis tuis.</td>
+            <td class="col-pt"><span class="v-num">11</span> Porque aos seus Anjos deu ordens a teu respeito, <span class="asterisk">*</span> para que te guardem em todos os teus caminhos.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">12</span> In mánibus portábunt te: <span class="asterisk">*</span> ne forte offéndas ad lápidem pedem tuum.</td>
+            <td class="col-pt"><span class="v-num">12</span> Nas mãos te levarão, <span class="asterisk">*</span> para que não firas teu pé em pedra alguma.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">13</span> Super áspidem, et basilíscum ambulábis: <span class="asterisk">*</span> et conculcábis leónem et dracónem.</td>
+            <td class="col-pt"><span class="v-num">13</span> Pisarás sobre a serpente e o basilisco, <span class="asterisk">*</span> calcarás aos pés o leão e o dragão.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">14</span> Quóniam in me sperávit, liberábo eum: <span class="asterisk">*</span> prótegam eum, quóniam cognóvit nomen meum.</td>
+            <td class="col-pt"><span class="v-num">14</span> Pois em mim esperou, hei de livrá-lo: <span class="asterisk">*</span> hei de protegê-lo, pois conheceu o meu nome.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">15</span> Clamábit ad me, et ego exáudiam eum: <span class="asterisk">*</span> cum ipso sum in tribulatióne: erípiam eum et glorificábo eum.</td>
+            <td class="col-pt"><span class="v-num">15</span> Clamará por mim e Eu o ouvirei; <span class="asterisk">*</span> com ele estou na angústia: hei de livrá-lo e glorificá-lo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">16</span> Longitúdine diérum replébo eum: <span class="asterisk">*</span> et osténdam illi salutáre meum.</td>
+            <td class="col-pt"><span class="v-num">16</span> Com longos dias o saciarei, <span class="asterisk">*</span> e lhe mostrarei a minha salvação.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Glória Patri, et Fílio, <span class="asterisk">*</span> et Spirítui Sancto.</td>
+            <td class="col-pt">Glória ao Pai e ao Filho <span class="asterisk">*</span> e ao Espírito Santo.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Sicut erat in princípio, et nunc, et semper, <span class="asterisk">*</span> et in sǽcula sæculórum. Amen.</td>
+            <td class="col-pt">Como era no princípio, agora e sempre, <span class="asterisk">*</span> por todos os séculos dos séculos. Amém.</td>
+          </tr>
+        </table>
+
+        <h3>Psalmus 133</h3>
+        <table class="prayer-table">
+          <tr>
+            <td class="col-lat"><span class="v-num">1</span> Ecce nunc benedícite Dóminum, <span class="asterisk">*</span> omnes servi Dómini:</td>
+            <td class="col-pt"><span class="v-num">1</span> Eis agora, bendizei ao Senhor, <span class="asterisk">*</span> todos vós, servos do Senhor:</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">1</span> Qui statis in domo Dómini, <span class="asterisk">*</span> in átriis domus Dei nostri.</td>
+            <td class="col-pt"><span class="v-num">1</span> Vós que estais na casa do Senhor, <span class="asterisk">*</span> nos átrios da casa do nosso Deus.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">2</span> In nóctibus extóllite manus vestras in sancta, <span class="asterisk">*</span> et benedícite Dóminum.</td>
+            <td class="col-pt"><span class="v-num">2</span> Nas vigílias da noite levantai vossas mãos para o santuário, <span class="asterisk">*</span> e bendizei ao Senhor.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><span class="v-num">3</span> Benedícat te Dóminus ex Sion, <span class="asterisk">*</span> qui fecit cælum et terram.</td>
+            <td class="col-pt"><span class="v-num">3</span> Abençoe-vos o Senhor, desde Sião, <span class="asterisk">*</span> que fez o céu e a terra.</td>
+          </tr>
+          <tr>
+            <td class="col-lat">Glória Patri... Sicut erat... Amen.</td>
+            <td class="col-pt">Glória ao Pai... Como era... Amém.</td>
+          </tr>
+          <tr>
+            <td class="col-lat"><strong>Ant.</strong> Miserére mihi, Dómine, et exáudi oratiónem meam.</td>
+            <td class="col-pt"><strong>Ant.</strong> Tende piedade de mim, Senhor, e ouvi a minha oração.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="page-footer">5 • Ad Completorium</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
