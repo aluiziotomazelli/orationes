@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   validate-data:
-    name: Validate Prayer Data & Schema
+    name: Run All Test Suites
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Test Suite
         run: |
-          python3 tests/test_prayers_data.py
+          python3 -m unittest discover -s tests -v
 
   deploy:
     name: Deploy to GitHub Pages
