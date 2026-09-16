@@ -15,17 +15,21 @@
   applyFontSize(currentFontSize);
 
   // Listen to system theme changes if set to auto
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (userTheme === 'auto') {
-      applyTheme('auto');
-    }
-  });
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (userTheme === 'auto') {
+        applyTheme('auto');
+      }
+    });
+  }
 
   // Listen to hash changes (SPA Router)
   window.addEventListener('hashchange', handleRoute);
-  window.addEventListener('DOMContentLoaded', () => {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleRoute);
+  } else {
     handleRoute();
-  });
+  }
 
   function handleRoute() {
     const hash = window.location.hash.replace('#', '').trim();
