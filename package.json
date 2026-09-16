@@ -1,0 +1,15 @@
+{
+  "name": "orationes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thesaurus precum et Officium Divinum (Latine - Lusitane)",
+  "scripts": {
+    "test:js": "vitest run",
+    "test:py": "python3 -m unittest discover -s tests -v",
+    "test": "vitest run && python3 -m unittest discover -s tests -v"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "vitest": "^1.4.0"
+  }
+}

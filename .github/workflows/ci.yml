@@ -31,9 +31,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Test Suite
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Node Dependencies
         run: |
-          python3 -m unittest discover -s tests -v
+          npm install
+
+      - name: Run All Test Suites
+        run: |
+          npm test
 
   deploy:
     name: Deploy to GitHub Pages
