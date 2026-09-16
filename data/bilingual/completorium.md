@@ -50,7 +50,7 @@
 | **℣.** Deus ✠ in adiutórium meum inténde. | **℣.** Deus, ✠ vinde em meu auxílio. |
 | **℟.** Dómine, ad adiuvándum me festína. | **℟.** Senhor, apressai-vos em socorrer-me. |
 | Glória Patri, et Fílio, * et Spirítui Sancto. | Glória ao Pai e ao Filho * e ao Espírito Santo. |
-| Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | Como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
+| Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | Assim como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
 | Allelúia. | Aleluia. |
 
 ---
@@ -76,7 +76,7 @@
 | **9** | In pace in idípsum * dórmiam, et requiéscam; | Em paz, logo ao deitar-me, * dormirei e descansarei; |
 | **10** | Quóniam tu, Dómine, singuláriter in spe * constituísti me. | Porque só Vós, Senhor, * na esperança me firmastes. |
 | — | ℣. Glória Patri, et Fílio, * et Spirítui Sancto. | ℣. Glória ao Pai e ao Filho * e ao Espírito Santo. |
-| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
+| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Assim como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
 
 #### Psalmus 90
 | V. | Latim | Português Ritmado |
@@ -98,7 +98,7 @@
 | **15** | Clamábit ad me, et ego exáudiam eum: * cum ipso sum in tribulatióne: erípiam eum et glorificábo eum. | Clamará por mim e Eu o ouvirei; * com ele estou na angústia: hei de livrá-lo e glorificá-lo. |
 | **16** | Longitúdine diérum replébo eum: * et osténdam illi salutáre meum. | Com longos dias o saciarei, * e lhe mostrarei a minha salvação. |
 | — | ℣. Glória Patri, et Fílio, * et Spirítui Sancto. | ℣. Glória ao Pai e ao Filho * e ao Espírito Santo. |
-| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
+| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Assim como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
 
 #### Psalmus 133
 | V. | Latim | Português Ritmado |
@@ -108,7 +108,7 @@
 | **2** | In nóctibus extóllite manus vestras in sancta, * et benedícite Dóminum. | Nas vigílias da noite levantai vossas mãos para o santuário, * e bendizei ao Senhor. |
 | **3** | Benedícat te Dóminus ex Sion, * qui fecit cælum et terram. | Abençoe-vos o Senhor, desde Sião, * que fez o céu e a terra. |
 | — | ℣. Glória Patri, et Fílio, * et Spirítui Sancto. | ℣. Glória ao Pai e ao Filho * e ao Espírito Santo. |
-| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
+| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Assim como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
 
 ---
 
@@ -184,7 +184,7 @@
 | **31** | Quod parásti * ante fáciem ómnium populórum, | A qual preparastes * perante a face de todos os povos, |
 | **32** | Lumen ad revelatiónem géntium, * et glóriam plebis tuæ Israël. | Luz para iluminar as nações, * e glória do vosso povo de Israel. |
 | — | ℣. Glória Patri, et Fílio, * et Spirítui Sancto. | ℣. Glória ao Pai e ao Filho * e ao Espírito Santo. |
-| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
+| — | ℟. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen. | ℟. Assim como era no princípio, agora e sempre, * por todos os séculos dos séculos. Amém. |
 
 | Latim | Português Ritmado |
 | :--- | :--- |

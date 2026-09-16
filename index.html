@@ -2,164 +2,78 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Orationes & Officium Divinum</title>
-  <style>
-    :root {
-      --bg-color: #fdfbf7;
-      --card-bg: #ffffff;
-      --text-color: #1c1a17;
-      --rubric-color: #990000;
-      --border-color: #e5ded3;
-      --subtext-color: #666;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-color: #121212;
-        --card-bg: #1e1e1e;
-        --text-color: #e0deda;
-        --rubric-color: #e65c5c;
-        --border-color: #2c2a27;
-        --subtext-color: #aaa;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: "EB Garamond", "Cardo", "Georgia", "Liberation Serif", serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 16px;
-    }
-
-    .container {
-      max-width: 600px;
-      width: 100%;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      color: var(--rubric-color);
-      font-size: 2em;
-      margin-bottom: 6px;
-      letter-spacing: 1px;
-    }
-
-    p.subtitle {
-      font-style: italic;
-      color: var(--subtext-color);
-      font-size: 1.05em;
-    }
-
-    .card-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 18px 20px;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-    }
-
-    .card:hover, .card:active {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-color: var(--rubric-color);
-    }
-
-    .card-title {
-      font-size: 1.3em;
-      color: var(--rubric-color);
-      font-weight: bold;
-      margin-bottom: 4px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .card-title span.arrow {
-      font-size: 0.9em;
-      opacity: 0.7;
-    }
-
-    .card-desc {
-      font-size: 0.95em;
-      color: var(--subtext-color);
-      line-height: 1.4;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 0.75em;
-      background: var(--bg-color);
-      border: 1px solid var(--border-color);
-      padding: 2px 6px;
-      border-radius: 4px;
-      margin-top: 8px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    footer {
-      margin-top: auto;
-      padding-top: 40px;
-      text-align: center;
-      font-size: 0.85em;
-      color: var(--subtext-color);
-    }
-
-    footer a {
-      color: var(--rubric-color);
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+
+  <!-- Top Controls Navigation -->
+  <header class="top-bar">
+    <a href="#" class="nav-brand" id="navBrand">Orationes</a>
+    <div class="btn-group">
+      <select class="select-input" id="langSelect" onchange="changeLanguage(this.value)" style="display: none;">
+        <!-- Filled dynamically -->
+      </select>
+      <button class="btn" onclick="adjustFont(-1)" title="Diminuir fonte">A−</button>
+      <button class="btn" onclick="adjustFont(1)" title="Aumentar fonte">A+</button>
+      <button class="btn" onclick="toggleTheme()" id="themeBtn" title="Alternar tema">🌓</button>
+    </div>
+  </header>
+
+  <!-- HOME VIEW (Lista de Orações) -->
+  <main class="home-view" id="homeView">
+    <div class="home-header">
       <h1>Orationes</h1>
-      <p class="subtitle">Thesaurus precum et Officium Divinum (Latine – Lusitane)</p>
-    </header>
+      <p>Thesaurus precum et Officium Divinum (Latine - Lusitane)</p>
+    </div>
 
     <div class="card-list">
+      <!-- ANGELUS -->
+      <a href="#angelus" class="card">
+        <div class="card-title">
+          <span>Angelus Dómini • O Angelus</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="card-desc">
+          Oração da Anunciação e Encarnação do Senhor. Suporte dinâmico a múltiplos idiomas ou apenas Latim.
+        </div>
+        <div class="tag">Multilíngue • 2 Colunas • 1960</div>
+      </a>
+
       <!-- COMPLETORIUM -->
-      <a href="completorium/completorium.html" class="card">
+      <a href="#completorium" class="card">
         <div class="card-title">
           <span>Ad Completorium • Completas</span>
           <span class="arrow">→</span>
         </div>
         <div class="card-desc">
-          Oração da noite do Ofício Divino (Rubricas de 1960). Edição bilíngue ritmada com Modo Noturno e controle de fonte.
+          Oração da noite do Ofício Divino (Rubricas de 1960). Edição bilíngue completa com Salmos 4, 90, 133 e Hino.
         </div>
-        <div class="tag">🌙 Noturno • Bilíngue • 1960</div>
+        <div class="tag">Noturno • Bilíngue • 1960</div>
       </a>
     </div>
 
-    <footer>
-      <p>Fontes: <a href="https://www.divinumofficium.com/" target="_blank">Divinum Officium</a></p>
-      <p style="margin-top: 4px;">Código disponível no <a href="https://github.com/aluiziotomazelli/orationes" target="_blank">GitHub</a></p>
+    <footer style="margin-top: 36px; text-align: center; font-size: 0.85em; color: var(--subtext-color);">
+      <p>Código aberto no <a href="https://github.com/aluiziotomazelli/orationes" target="_blank" style="color: var(--rubric-color); text-decoration: none;">GitHub</a></p>
     </footer>
-  </div>
+  </main>
+
+  <!-- PRAYER VIEW (Leitura da Oração) -->
+  <main class="container" id="prayerView" style="display: none;">
+    <h1 class="prayer-title" id="prayerTitle"></h1>
+    <div class="subtitle" id="prayerSubtitle"></div>
+
+    <table class="prayer-table" id="prayerBody">
+      <!-- Inserido dinamicamente pelo app.js -->
+    </table>
+
+    <footer id="prayerFooter" style="margin-top: 28px; margin-bottom: 20px; text-align: center; font-size: 0.85em; color: var(--subtext-color);"></footer>
+  </main>
+
+  <!-- Scripts de Dados e Motor -->
+  <script src="data/prayers/angelus.js"></script>
+  <script src="data/prayers/completorium.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -192,7 +192,7 @@ Et Iesum, benedíctum fructum ventris tui,
 nobis post hoc exsílium osténde.  
 O clemens, o pia, o dulcis Virgo María.
 
-℣. Ora pro nobis, sancta Dei Génetrix.  
+℣. Ora pro nobis, sancta Dei Génitrix.  
 ℟. Ut digni efficiámur promissiónibus Christi.
 
 **Orémus.**  

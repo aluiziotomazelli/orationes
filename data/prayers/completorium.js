@@ -1,0 +1,745 @@
+// Ad Completorium Data
+window.ORATIONES_DATA = window.ORATIONES_DATA || {};
+window.ORATIONES_DATA.completorium = {
+  "id": "completorium",
+  "title": {
+    "la": "Ad Completorium",
+    "pt": "Completas"
+  },
+  "subtitle": {
+    "la": "Divinum Officium • Rubricæ 1960 (Dominica)",
+    "pt": "Ofício Divino • Rubricas de 1960 (Domingo)"
+  },
+  "sources": [
+    {
+      "name": "Divinum Officium",
+      "url": "https://www.divinumofficium.com/"
+    }
+  ],
+  "availableLangs": [
+    {
+      "code": "pt",
+      "label": "Português"
+    }
+  ],
+  "items": [
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Incipit",
+        "pt": "Início"
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Iube, Dómine, benedícere.",
+        "pt": "Dignai-vos, Senhor, abençoar-nos."
+      },
+      "r": {
+        "la": "<span class=\"rubric\">Benedíctio:</span> Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens. <span class=\"r-sym\">℟.</span> Amen.",
+        "pt": "<span class=\"rubric\">Bênção:</span> Uma noite tranquila e um fim perfeito conceda-nos o Senhor onipotente. <span class=\"r-sym\">℟.</span> Amém."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Lectio Brevis",
+        "pt": "Leitura Breve"
+      },
+      "sub": "1 Pet 5:8-9"
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Fratres:</strong> Sóbrii estóte, et vigiláte: quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret: cui resístite fortes in fide.",
+        "pt": "<strong>Irmãos:</strong> Sede sóbrios e vigiai; porque o vosso adversário, o diabo, como leão a rugir, vos rodeia buscando a quem devorar: resisti-lhe fortes na fé."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Tu autem, Dómine, miserére nobis.",
+        "pt": "E Vós, Senhor, tende misericórdia de nós."
+      },
+      "r": {
+        "la": "Deo grátias.",
+        "pt": "Graças a Deus."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Initium & Confessio",
+        "pt": "Exame e Confissão"
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Adiutórium nostrum <span class=\"cross\">✠</span> in nómine Dómini.",
+        "pt": "O nosso auxílio está <span class=\"cross\">✠</span> no nome do Senhor."
+      },
+      "r": {
+        "la": "Qui fecit cælum et terram.",
+        "pt": "Que fez o céu e a terra."
+      }
+    },
+    {
+      "type": "rubric",
+      "text": {
+        "la": "Examen conscientiæ vel Pater noster totum secreto usque ad:",
+        "pt": "Exame de consciência ou Pai nosso em silêncio até:"
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Et ne nos indúcas in tentatiónem:",
+        "pt": "E não nos deixeis cair em tentação:"
+      },
+      "r": {
+        "la": "Sed líbera nos a malo.",
+        "pt": "Mas livrai-nos do mal."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Confíteor</strong> Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: <span class=\"rubric\">(percutit sibi pectus ter)</span> <strong>mea culpa, mea culpa, mea máxima culpa.</strong> Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.",
+        "pt": "<strong>Confesso</strong> a Deus todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos, que pequei gravemente por pensamentos, palavras e obras: <span class=\"rubric\">(bate três vezes no peito)</span> <strong>por minha culpa, minha culpa, minha máxima culpa.</strong> Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos, que rogueis por mim ao Senhor nosso Deus."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "<strong>Misereátur</strong> nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam.",
+        "pt": "<strong>Compadeça-se</strong> de nós Deus todo-poderoso e, perdoados os nossos pecados, nos conduza à vida eterna."
+      },
+      "r": {
+        "la": "Amen.",
+        "pt": "Amém."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "<strong>Indulgéntiam,</strong> <span class=\"cross\">✠</span> absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus.",
+        "pt": "<strong>Indulgência,</strong> <span class=\"cross\">✠</span> absolvição e remissão de nossos pecados conceda-nos o Senhor onipotente e misericordioso."
+      },
+      "r": {
+        "la": "Amen.",
+        "pt": "Amém."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Convérte nos, <span class=\"cross\">✙</span> Deus, salutáris noster.",
+        "pt": "Convertei-nos, <span class=\"cross\">✙</span> ó Deus, nosso Salvador."
+      },
+      "r": {
+        "la": "Et avérte iram tuam a nobis.",
+        "pt": "E afastai de nós a vossa ira."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Deus <span class=\"cross\">✠</span> in adiutórium meum inténde.",
+        "pt": "Deus, <span class=\"cross\">✠</span> vinde em meu auxílio."
+      },
+      "r": {
+        "la": "Dómine, ad adiuvándum me festína.",
+        "pt": "Senhor, apressai-vos em socorrer-me."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, <span class=\"asterisk\">*</span> et in sǽcula sæculórum. Amen. Allelúia.",
+        "pt": "Assim como era no princípio, agora e sempre, <span class=\"asterisk\">*</span> por todos os séculos dos séculos. Amém. Aleluia."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Psalmi",
+        "pt": "Salmos"
+      },
+      "sub": "Psalmi et Antiphona de Dominica"
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Ant.</strong> Miserére <span class=\"asterisk\">*</span> mihi, Dómine, et exáudi oratiónem meam.",
+        "pt": "<strong>Ant.</strong> Tende piedade <span class=\"asterisk\">*</span> de mim, Senhor, e ouvi a minha oração."
+      }
+    },
+    {
+      "type": "psalm_title",
+      "title": "Psalmus 4"
+    },
+    {
+      "type": "psalm_verse",
+      "num": "2",
+      "text": {
+        "la": "Cum invocárem exaudívit me Deus iustítiæ meæ: <span class=\"asterisk\">*</span> in tribulatióne dilatásti mihi.",
+        "pt": "Ao invocar-Vos, atendeu-me o Deus da minha justiça: <span class=\"asterisk\">*</span> na tribulação me dilatastes o coração."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "2",
+      "text": {
+        "la": "Miserére mei, <span class=\"asterisk\">*</span> et exáudi oratiónem meam.",
+        "pt": "Tende piedade de mim, <span class=\"asterisk\">*</span> e ouvi a minha oração."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "3",
+      "text": {
+        "la": "Fílii hóminum, úsquequo gravi corde? <span class=\"asterisk\">*</span> ut quid dilígitis vanitátem, et quǽritis mendácium?",
+        "pt": "Filhos dos homens, até quando tereis coração pesado? <span class=\"asterisk\">*</span> Por que amais a vaidade e buscais a mentira?"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "4",
+      "text": {
+        "la": "Et scitóte quóniam mirificávit Dóminus sanctum suum: <span class=\"asterisk\">*</span> Dóminus exáudiet me cum clamávero ad eum.",
+        "pt": "Sabei, pois, que o Senhor engrandeceu o seu santo: <span class=\"asterisk\">*</span> o Senhor há de ouvir-me quando a Ele clamar."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "5",
+      "text": {
+        "la": "Irascímini, et nolíte peccáre: <span class=\"asterisk\">*</span> quæ dícitis in córdibus vestris, in cubílibus vestris compungímini.",
+        "pt": "Temei a ira e não pequeis: <span class=\"asterisk\">*</span> do que dizeis em vossos corações, compungi-vos em vossos leitos."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "6",
+      "text": {
+        "la": "Sacrificáte sacrifícium iustítiæ, et speráte in Dómino. <span class=\"asterisk\">*</span> Multi dicunt: Quis osténdit nobis bona?",
+        "pt": "Oferecei sacrifícios de justiça e esperai no Senhor. <span class=\"asterisk\">*</span> Muitos dizem: Quem nos mostrará os bens?"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "7",
+      "text": {
+        "la": "Signátum est super nos lumen vultus tui, Dómine: <span class=\"asterisk\">*</span> dedísti lætítiam in corde meo.",
+        "pt": "Gravada está sobre nós a luz de vossa face, Senhor: <span class=\"asterisk\">*</span> destes alegria ao meu coração."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "8",
+      "text": {
+        "la": "A fructu fruménti, vini, et ólei sui <span class=\"asterisk\">*</span> multiplicáti sunt.",
+        "pt": "Pela abundância de seu trigo, vinho e azeite <span class=\"asterisk\">*</span> eles se enriqueceram."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "9",
+      "text": {
+        "la": "In pace in idípsum <span class=\"asterisk\">*</span> dórmiam, et requiéscam;",
+        "pt": "Em paz, logo ao deitar-me, <span class=\"asterisk\">*</span> dormirei e descansarei;"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "10",
+      "text": {
+        "la": "Quóniam tu, Dómine, singuláriter in spe <span class=\"asterisk\">*</span> constituísti me.",
+        "pt": "Porque só Vós, Senhor, <span class=\"asterisk\">*</span> na esperança me firmastes."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, <span class=\"asterisk\">*</span> et in sǽcula sæculórum. Amen.",
+        "pt": "Assim como era no princípio, agora e sempre, <span class=\"asterisk\">*</span> por todos os séculos dos séculos. Amém."
+      }
+    },
+    {
+      "type": "psalm_title",
+      "title": "Psalmus 90"
+    },
+    {
+      "type": "psalm_verse",
+      "num": "1",
+      "text": {
+        "la": "Qui hábitat in adiutório Altíssimi, <span class=\"asterisk\">*</span> in protectióne Dei cæli commorábitur.",
+        "pt": "Quem habita sob o amparo do Altíssimo, <span class=\"asterisk\">*</span> na proteção do Deus do céu habitará."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "2",
+      "text": {
+        "la": "Dicet Dómino: Suscéptor meus es tu, et refúgium meum: <span class=\"asterisk\">*</span> Deus meus sperábo in eum.",
+        "pt": "Dirá ao Senhor: Vós sois o meu amparo e meu refúgio: <span class=\"asterisk\">*</span> meu Deus, n’Ele esperarei."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "3",
+      "text": {
+        "la": "Quóniam ipse liberávit me de láqueo venántium, <span class=\"asterisk\">*</span> et a verbo áspero.",
+        "pt": "Porque Ele me livrou do laço dos caçadores, <span class=\"asterisk\">*</span> e da palavra áspera."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "4",
+      "text": {
+        "la": "Scápulis suis obumbrábit tibi: <span class=\"asterisk\">*</span> et sub pennis eius sperábis.",
+        "pt": "Com suas asas te cobrirá, <span class=\"asterisk\">*</span> e sob as suas penas esperarás."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "5",
+      "text": {
+        "la": "Scuto circúmdabit te véritas eius: <span class=\"asterisk\">*</span> non timébis a timóre noctúrno,",
+        "pt": "Com escudo te cercará a sua verdade: <span class=\"asterisk\">*</span> não temerás o terror da noite,"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "6",
+      "text": {
+        "la": "A sagítta volánte in die, a negótio perambulánte in ténebris: <span class=\"asterisk\">*</span> ab incúrsu, et dæmónio meridiáno.",
+        "pt": "Nem a flecha que voa de dia, nem a peste que vaga nas trevas, <span class=\"asterisk\">*</span> nem o ataque do demônio do meio-dia."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "7",
+      "text": {
+        "la": "Cadent a látere tuo mille, et decem míllia a dextris tuis: <span class=\"asterisk\">*</span> ad te autem non appropinquábit.",
+        "pt": "Cairão mil ao teu lado e dez mil à tua direita: <span class=\"asterisk\">*</span> a ti, porém, nada atingirá."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "8",
+      "text": {
+        "la": "Verúmtamen óculis tuis considerábis: <span class=\"asterisk\">*</span> et retributiónem peccatórum vidébis.",
+        "pt": "Antes com teus próprios olhos contemplarás, <span class=\"asterisk\">*</span> e verás o castigo dos pecadores."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "9",
+      "text": {
+        "la": "Quóniam tu es, Dómine, spes mea: <span class=\"asterisk\">*</span> Altíssimum posuísti refúgium tuum.",
+        "pt": "Porque Vós sois, Senhor, a minha esperança: <span class=\"asterisk\">*</span> no Altíssimo puseste o teu refúgio."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "10",
+      "text": {
+        "la": "Non accédet ad te malum: <span class=\"asterisk\">*</span> et flagéllum non appropinquábit tabernáculo tuo.",
+        "pt": "Não chegará a ti o mal, <span class=\"asterisk\">*</span> nem o flagelo se aproximará da tua tenda."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "11",
+      "text": {
+        "la": "Quóniam Ángelis suis mandávit de te: <span class=\"asterisk\">*</span> ut custódiant te in ómnibus viis tuis.",
+        "pt": "Porque aos seus Anjos deu ordens a teu respeito, <span class=\"asterisk\">*</span> para que te guardem em todos os teus caminhos."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "12",
+      "text": {
+        "la": "In mánibus portábunt te: <span class=\"asterisk\">*</span> ne forte offéndas ad lápidem pedem tuum.",
+        "pt": "Nas mãos te levarão, <span class=\"asterisk\">*</span> para que não firas teu pé em pedra alguma."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "13",
+      "text": {
+        "la": "Super áspidem, et basilíscum ambulábis: <span class=\"asterisk\">*</span> et conculcábis leónem et dracónem.",
+        "pt": "Pisarás sobre a serpente e o basilisco, <span class=\"asterisk\">*</span> calcarás aos pés o leão e o dragão."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "14",
+      "text": {
+        "la": "Quóniam in me sperávit, liberábo eum: <span class=\"asterisk\">*</span> prótegam eum, quóniam cognóvit nomen meum.",
+        "pt": "Pois em mim esperou, hei de livrá-lo: <span class=\"asterisk\">*</span> hei de protegê-lo, pois conheceu o meu nome."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "15",
+      "text": {
+        "la": "Clamábit ad me, et ego exáudiam eum: <span class=\"asterisk\">*</span> cum ipso sum in tribulatióne: erípiam eum et glorificábo eum.",
+        "pt": "Clamará por mim e Eu o ouvirei; <span class=\"asterisk\">*</span> com ele estou na angústia: hei de livrá-lo e glorificá-lo."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "16",
+      "text": {
+        "la": "Longitúdine diérum replébo eum: <span class=\"asterisk\">*</span> et osténdam illi salutáre meum.",
+        "pt": "Com longos dias o saciarei, <span class=\"asterisk\">*</span> e lhe mostrarei a minha salvação."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, <span class=\"asterisk\">*</span> et in sǽcula sæculórum. Amen.",
+        "pt": "Assim como era no princípio, agora e sempre, <span class=\"asterisk\">*</span> por todos os séculos dos séculos. Amém."
+      }
+    },
+    {
+      "type": "psalm_title",
+      "title": "Psalmus 133"
+    },
+    {
+      "type": "psalm_verse",
+      "num": "1",
+      "text": {
+        "la": "Ecce nunc benedícite Dóminum, <span class=\"asterisk\">*</span> omnes servi Dómini:",
+        "pt": "Eis agora, bendizei ao Senhor, <span class=\"asterisk\">*</span> todos vós, servos do Senhor:"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "1",
+      "text": {
+        "la": "Qui statis in domo Dómini, <span class=\"asterisk\">*</span> in átriis domus Dei nostri.",
+        "pt": "Vós que estais na casa do Senhor, <span class=\"asterisk\">*</span> nos átrios da casa do nosso Deus."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "2",
+      "text": {
+        "la": "In nóctibus extóllite manus vestras in sancta, <span class=\"asterisk\">*</span> et benedícite Dóminum.",
+        "pt": "Nas vigílias da noite levantai vossas mãos para o santuário, <span class=\"asterisk\">*</span> e bendizei ao Senhor."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "3",
+      "text": {
+        "la": "Benedícat te Dóminus ex Sion, <span class=\"asterisk\">*</span> qui fecit cælum et terram.",
+        "pt": "Abençoe-vos o Senhor, desde Sião, <span class=\"asterisk\">*</span> que fez o céu e a terra."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, <span class=\"asterisk\">*</span> et in sǽcula sæculórum. Amen.",
+        "pt": "Assim como era no princípio, agora e sempre, <span class=\"asterisk\">*</span> por todos os séculos dos séculos. Amém."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Ant.</strong> Miserére mihi, Dómine, et exáudi oratiónem meam.",
+        "pt": "<strong>Ant.</strong> Tende piedade de mim, Senhor, e ouvi a minha oração."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Hymnus",
+        "pt": "Hino"
+      }
+    },
+    {
+      "type": "hymn_stanza",
+      "text": {
+        "la": "Te lucis ante términum,<br>Rerum Creátor, póscimus,<br>Ut pro tua cleméntia<br>Sis præsul et custódia.",
+        "pt": "Antes do findar da luz,<br>ó Criador de tudo, vos suplicamos:<br>que por vossa clemência<br>sejais nosso guia e proteção."
+      }
+    },
+    {
+      "type": "hymn_stanza",
+      "text": {
+        "la": "Procul recédant sómnia,<br>Et nóctium phantásmata;<br>Hostémque nostrum cómprime,<br>Ne polluántur córpora.",
+        "pt": "Para longe afastem-se os sonhos<br>e os fantasmas da noite;<br>o nosso inimigo refreai,<br>para não se mancharem os corpos."
+      }
+    },
+    {
+      "type": "hymn_stanza",
+      "text": {
+        "la": "Præsta, Pater piíssime,<br>Patríque compar Únice,<br>Cum Spíritu Paráclito<br>Regnans per omne sǽculum.<br>Amen.",
+        "pt": "Concedei-nos, Pai piíssimo,<br>e Vós, Filho Único igual ao Pai,<br>que com o Espírito Paráclito<br>reinais por todos os séculos.<br>Amém."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Capitulum & Responsorium breve",
+        "pt": "Capítulo e Responsório breve"
+      },
+      "sub": "Ier 14:9"
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Tu autem in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos, Dómine, Deus noster. <span class=\"r-sym\">℟.</span> Deo grátias.",
+        "pt": "Vós, porém, estais em nós, Senhor, e o vosso santo nome foi invocado sobre nós: não nos abandoneis, Senhor, nosso Deus. <span class=\"r-sym\">℟.</span> Graças a Deus."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "<span class=\"r-sym\">℟.br.</span> In manus tuas, Dómine, <span class=\"asterisk\">*</span> Comméndo spíritum meum.",
+        "pt": "<span class=\"r-sym\">℟.br.</span> Em vossas mãos, Senhor, <span class=\"asterisk\">*</span> Entrego o meu espírito."
+      },
+      "r": {
+        "la": "In manus tuas, Dómine, <span class=\"asterisk\">*</span> Comméndo spíritum meum.",
+        "pt": "Em vossas mãos, Senhor, <span class=\"asterisk\">*</span> Entrego o meu espírito."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Redemísti nos, Dómine, Deus veritátis.",
+        "pt": "Vós nos resgatastes, Senhor, Deus da verdade."
+      },
+      "r": {
+        "la": "Comméndo spíritum meum.",
+        "pt": "Entrego o meu espírito."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "In manus tuas, Dómine, <span class=\"asterisk\">*</span> Comméndo spíritum meum.",
+        "pt": "Em vossas mãos, Senhor, <span class=\"asterisk\">*</span> Entrego o meu espírito."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Custódi nos, Dómine, ut pupíllam óculi.",
+        "pt": "Guardai-nos, Senhor, como a pupila dos olhos."
+      },
+      "r": {
+        "la": "Sub umbra alárum tuárum prótege nos.",
+        "pt": "À sombra de vossas asas protegei-nos."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Canticum Simeonis • Nunc dimíttis",
+        "pt": "Cântico de Simeão"
+      },
+      "sub": "Luc 2:29-32"
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Ant.</strong> Salva nos, <span class=\"asterisk\">*</span> Dómine, vigilántes, custódi nos dormiéntes; ut vigilémus cum Christo, et requiescámus in pace.",
+        "pt": "<strong>Ant.</strong> Salvai-nos, <span class=\"asterisk\">*</span> Senhor, acordados, guardai-nos dormindo; para que vigiemos com Cristo, e descansemos em paz."
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "29",
+      "text": {
+        "la": "<span class=\"cross\">✠</span> Nunc dimíttis servum tuum, Dómine, <span class=\"asterisk\">*</span> secúndum verbum tuum in pace:",
+        "pt": "<span class=\"cross\">✠</span> Agora podeis deixar o vosso servo ir, Senhor, <span class=\"asterisk\">*</span> segundo a vossa palavra, em paz:"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "30",
+      "text": {
+        "la": "Quia vidérunt óculi mei <span class=\"asterisk\">*</span> salutáre tuum,",
+        "pt": "Porque os meus olhos viram <span class=\"asterisk\">*</span> a vossa salvação,"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "31",
+      "text": {
+        "la": "Quod parásti <span class=\"asterisk\">*</span> ante fáciem ómnium populórum,",
+        "pt": "A qual preparastes <span class=\"asterisk\">*</span> perante a face de todos os povos,"
+      }
+    },
+    {
+      "type": "psalm_verse",
+      "num": "32",
+      "text": {
+        "la": "Lumen ad revelatiónem géntium, <span class=\"asterisk\">*</span> et glóriam plebis tuæ Israël.",
+        "pt": "Luz para iluminar as nações, <span class=\"asterisk\">*</span> e glória do vosso povo de Israel."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, <span class=\"asterisk\">*</span> et Spirítui Sancto.",
+        "pt": "Glória ao Pai e ao Filho <span class=\"asterisk\">*</span> e ao Espírito Santo."
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, <span class=\"asterisk\">*</span> et in sǽcula sæculórum. Amen.",
+        "pt": "Assim como era no princípio, agora e sempre, <span class=\"asterisk\">*</span> por todos os séculos dos séculos. Amém."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "<strong>Ant.</strong> Salva nos, Dómine, vigilántes, custódi nos dormiéntes; ut vigilémus cum Christo, et requiescámus in pace.",
+        "pt": "<strong>Ant.</strong> Salvai-nos, Senhor, acordados, guardai-nos dormindo; para que vigiemos com Cristo, e descansemos em paz."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Oratio & Conclusio",
+        "pt": "Oração e Conclusão"
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Dómine, exáudi oratiónem meam.",
+        "pt": "Senhor, ouvi a minha oração."
+      },
+      "r": {
+        "la": "Et clamor meus ad te véniat.",
+        "pt": "E o meu clamor chegue até Vós."
+      }
+    },
+    {
+      "type": "oratio",
+      "label": {
+        "la": "Orémus.",
+        "pt": "Oremos."
+      },
+      "text": {
+        "la": "Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper.<br>Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+        "pt": "Visitai, Senhor, nós vos pedimos, esta morada, e todas as ciladas do inimigo para longe dela repeli: os vossos santos Anjos nela habitem, guardando-nos em paz; e a vossa bênção esteja sempre sobre nós.<br>Por nosso Senhor Jesus Cristo, vosso Filho: que convosco vive e reina em unidade do Espírito Santo, Deus, por todos os séculos dos séculos."
+      },
+      "amen": {
+        "la": "℟. Amen.",
+        "pt": "℟. Amém."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Dómine, exáudi oratiónem meam.",
+        "pt": "Senhor, ouvi a minha oração."
+      },
+      "r": {
+        "la": "Et clamor meus ad te véniat.",
+        "pt": "E o meu clamor chegue até Vós."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Benedicámus Dómino.",
+        "pt": "Bendigamos ao Senhor."
+      },
+      "r": {
+        "la": "Deo grátias.",
+        "pt": "Graças a Deus."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "<span class=\"rubric\">Benedíctio:</span> Benedícat et custódiat nos <span class=\"cross\">✠</span> omnípotens et miséricors Dóminus, Pater, et Fílius, et Spíritus Sanctus.",
+        "pt": "<span class=\"rubric\">Bênção:</span> Abençoe-nos e guarde-nos <span class=\"cross\">✠</span> o Senhor onipotente e misericordioso, Pai, e Filho, e Espírito Santo."
+      },
+      "r": {
+        "la": "Amen.",
+        "pt": "Amém."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Antiphona finalis B.M.V.",
+        "pt": "Salve Rainha"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Salve, Regína, mater misericórdiæ;<br>vita, dulcédo et spes nóstra, salve.<br>Ad te clamámus éxsules fílii Hevæ.<br>Ad te suspirámus geméntes et flentes<br>in hac lacrimárum valle.<br><br>Eia ergo, advocáta nostra,<br>illos tuos misericórdes óculos ad nos convérte.<br>Et Iesum, benedíctum fructum ventris tui,<br>nobis post hoc exsílium osténde.<br>O clemens, o pia, o dulcis Virgo María.",
+        "pt": "Salve Rainha, Mãe de Misericórdia,<br>Vida, doçura e esperança nossa, salve!<br>A Vós bradamos, os degredados filhos de Eva.<br>A Vós suspiramos, gemendo e chorando<br>neste vale de lágrimas.<br><br>Eia, pois, advogada nossa,<br>Esses Vossos olhos misericordiosos a nós volvei,<br>E, depois desse desterro,<br>Mostrai-nos Jesus, bendito fruto do Vosso Ventre.<br>Ó Clemente, Ó Piedosa, Ó Doce Sempre Virgem Maria."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Ora pro nobis, sancta Dei Génitrix.",
+        "pt": "Rogai por nós, santa Mãe de Deus."
+      },
+      "r": {
+        "la": "Ut digni efficiámur promissiónibus Christi.",
+        "pt": "Para que sejamos dignos das promessas de Cristo."
+      }
+    },
+    {
+      "type": "oratio",
+      "label": {
+        "la": "Orémus.",
+        "pt": "Oremos."
+      },
+      "text": {
+        "la": "Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cuius commemoratióne lætámur, eius pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúndem Christum Dóminum nostrum.",
+        "pt": "Deus onipotente e eterno, que o corpo e a alma da gloriosa Virgem Mãe Maria, para merecer ser digna morada de vosso Filho, com a cooperação do Espírito Santo preparastes: dai que, alegrando-nos com a sua memória, pela sua piedosa intercessão sejamos livres dos males presentes e da morte eterna. Pelo mesmo Cristo, nosso Senhor."
+      },
+      "amen": {
+        "la": "℟. Amen.",
+        "pt": "℟. Amém."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "<span class=\"cross\">✠</span> Divínum auxílium máneat semper nobíscum.",
+        "pt": "<span class=\"cross\">✠</span> O auxílio divino permaneça sempre conosco."
+      },
+      "r": {
+        "la": "Amen.",
+        "pt": "Amém."
+      }
+    }
+  ]
+};

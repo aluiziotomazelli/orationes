@@ -1,53 +1,64 @@
 # Orationes & Officium Divinum
 
-Compêndio de orações católicas tradicionais e horas do Ofício Divino em edição bilíngue (**Latim – Português**).
+Compêndio de orações católicas tradicionais e horas do Ofício Divino em edição bilíngue (Latim e vernáculo).
 
-🌐 **Acesse online (Web & Celular):**  
-👉 [**aluiziotomazelli.github.io/orationes**](https://aluiziotomazelli.github.io/orationes/)  
-🌙 **Acesso direto ao Completório:** [**aluiziotomazelli.github.io/orationes/completorium/**](https://aluiziotomazelli.github.io/orationes/completorium/)
-
----
-
-## 🎯 Proposta do Projeto
-
-1. **Tradução ritmada e fiel à ordem do latim:** Facilita a recitação em coro/voz alta e o acompanhamento imediato palavra por palavra.
-2. **Formato Web/Mobile responsivo:** Com Modo Escuro (*Dark Mode*) e controle dinâmico de fonte para rezar no smartphone antes de dormir.
-3. **Formato Impresso em Livreto A5 (Dobra de A4):** Imposição pronta para impressão doméstica em 2 folhas de papel comum.
+Acesso online:
+* Página principal: https://aluiziotomazelli.github.io/orationes/
+* Angelus Dómini: https://aluiziotomazelli.github.io/orationes/#angelus
+* Ad Completorium: https://aluiziotomazelli.github.io/orationes/#completorium
 
 ---
 
-## 📁 Estrutura do Repositório
+## Proposta
 
-| Arquivo | Descrição |
-| :--- | :--- |
-| [**`index.html`**](index.html) | Página inicial do portal para o **GitHub Pages**. |
-| [**`completorium/completorium.html`**](completorium/completorium.html) | **Aplicativo Web / Mobile Offline**. Contém alternador de Modo Escuro (🌙), ajuste dinâmico de tamanho de fonte (`A+` / `A−`) e visualização 50/50 em duas colunas. |
-| [**`completorium/completorium_livreto_A4_pronto_impressao.pdf`**](completorium/completorium_livreto_A4_pronto_impressao.pdf) | **PDF de Livreto A4 com Imposição Pronta**. Formato de 8 páginas A5 distribuídas em 2 folhas A4 prontas para dobrar ao meio. |
-| [**`completorium/completorium_celular.pdf`**](completorium/completorium_celular.pdf) | **PDF formatado sob medida para tela de smartphone** (105mm × 185mm) com margens ultrafinas. |
-| [**`completorium/completorium_meia_folha_A5.pdf`**](completorium/completorium_meia_folha_A5.pdf) | **PDF em páginas sequenciais tamanho A5** (meia folha A4). |
-| [**`completorium/completorium_bilingue.md`**](completorium/completorium_bilingue.md) | Texto bilíngue completo e revisado em Markdown. |
-| [**`completorium/completorium_latim.md`**](completorium/completorium_latim.md) | Texto integral apenas em latim litúrgico. |
+1. Textos alinhados verso a verso para facilitar o acompanhamento da oração em latim.
+2. Aplicação web com suporte a múltiplos idiomas, modo escuro automático e ajuste de fonte.
+3. Arquivos PDF diagramados para impressão em papel A4 e leitura em dispositivos móveis.
 
 ---
 
-## 🖨️ Como Imprimir o Livreto A4 em Casa
+## Estrutura do repositório
 
-O arquivo [`completorium_livreto_A4_pronto_impressao.pdf`](completorium/completorium_livreto_A4_pronto_impressao.pdf) já vem com as páginas ordenadas para gerar um livreto de 8 páginas A5 usando **apenas 2 folhas de papel A4 comum**:
-
-1. Abra o arquivo [`completorium_livreto_A4_pronto_impressao.pdf`](completorium/completorium_livreto_A4_pronto_impressao.pdf) no seu leitor de PDF ou navegador.
-2. Na janela de impressão:
-   * **Tamanho do papel:** A4 (Paisagem / Horizontal).
-   * **Escala:** 100% (Tamanho real).
-   * **Impressão:** Frente e Verso (*Duplex*).
-   * **Orientação de virada:** **Inverter pela borda menor / borda curta** (*Flip on short edge*).
-3. **Montagem:**
-   * Pegue as duas folhas impressas na mesma ordem da saída.
-   * Dobre o conjunto ao meio na linha guia pontilhada central.
-   * O livreto estará pronto e paginado na sequência correta de 1 a 8.
+```text
+orationes/
+├── index.html                  (Portal e aplicação web)
+├── app.js                      (Motor de renderização e controle de idioma)
+├── style.css                   (Folha de estilos)
+│
+├── data/
+│   ├── latin/                  (Textos originais em latim em formato Markdown)
+│   │   ├── angelus.md
+│   │   └── completorium.md
+│   │
+│   ├── prayers/                (Dados estruturados em JS e JSON)
+│   │   ├── angelus.js / angelus.json
+│   │   └── completorium.js / completorium.json
+│   │
+│   └── bilingual/              (Textos de referência bilíngue em Markdown)
+│       └── completorium.md
+│
+└── print/                      (Documentos PDF)
+    ├── completorium_livreto_A4.pdf   (Livreto de 8 páginas A5 em 2 folhas A4 para dobra)
+    ├── completorium_A5.pdf           (Páginas sequenciais em formato A5)
+    └── completorium_celular.pdf      (Formato vertical para tela de celular)
+```
 
 ---
 
-## 📜 Fontes & Créditos
+## Impressão do livreto A4
 
-* **Texto em Latim e Rubricas:** [Divinum Officium](https://www.divinumofficium.com/) (*Rubricæ 1960 — Dominica*).
-* **Tradução em Português:** Tradução litúrgica ritmada e tradicional alinhada verso a verso.
+O arquivo `print/completorium_livreto_A4.pdf` está configurado para gerar um livreto de 8 páginas A5 usando duas folhas de papel A4:
+
+1. Abra o arquivo `print/completorium_livreto_A4.pdf` em um leitor de PDF.
+2. Na caixa de diálogo de impressão:
+   * Tamanho do papel: A4 (paisagem).
+   * Escala: 100% (tamanho real).
+   * Impressão: frente e verso (duplex).
+   * Orientação de virada: inverter pela borda menor (borda curta).
+3. Após a impressão, junte as folhas e dobre-as ao meio pela linha guia central.
+
+---
+
+## Fontes
+
+* Texto em latim e rubricas: [Divinum Officium](https://www.divinumofficium.com/) (Rubricæ 1960).

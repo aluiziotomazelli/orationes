@@ -1,0 +1,282 @@
+:root {
+  --bg-color: #fdfbf7;
+  --card-bg: #ffffff;
+  --text-color: #1c1a17;
+  --rubric-color: #990000;
+  --border-color: #e5ded3;
+  --header-bg: #f4eee3;
+  --subtext-color: #666666;
+  --font-size: 15px;
+  --line-height: 1.45;
+}
+
+/* Detecção Automática do Modo Escuro do Celular / Sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --card-bg: #1c1b18;
+    --text-color: #e0deda;
+    --rubric-color: #e65c5c;
+    --border-color: #2c2a27;
+    --header-bg: #1a1917;
+    --subtext-color: #a09d97;
+  }
+}
+
+/* Sobrescrita Manual do Usuário (se quiser forçar Claro ou Escuro) */
+[data-theme="light"] {
+  --bg-color: #fdfbf7;
+  --card-bg: #ffffff;
+  --text-color: #1c1a17;
+  --rubric-color: #990000;
+  --border-color: #e5ded3;
+  --header-bg: #f4eee3;
+  --subtext-color: #666666;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --card-bg: #1c1b18;
+  --text-color: #e0deda;
+  --rubric-color: #e65c5c;
+  --border-color: #2c2a27;
+  --header-bg: #1a1917;
+  --subtext-color: #a09d97;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "EB Garamond", "Cardo", "Georgia", "Liberation Serif", serif;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Top Controls Header */
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar a.nav-brand {
+  color: var(--rubric-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.btn, select.select-input {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 12px 8px 80px 8px;
+}
+
+/* Home List View */
+.home-view {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 12px;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.home-header h1 {
+  font-size: 2em;
+  color: var(--rubric-color);
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.home-header p {
+  font-style: italic;
+  color: var(--subtext-color);
+  font-size: 1.05em;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.card:hover, .card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-color: var(--rubric-color);
+}
+
+.card-title {
+  font-size: 1.25em;
+  color: var(--rubric-color);
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-desc {
+  font-size: 0.95em;
+  color: var(--subtext-color);
+  line-height: 1.4;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75em;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Prayer View Typography */
+h1.prayer-title {
+  text-align: center;
+  color: var(--rubric-color);
+  font-size: 1.45em;
+  margin: 12px 0 2px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--subtext-color);
+  margin-bottom: 16px;
+}
+
+h2.section-title {
+  text-align: center;
+  color: var(--rubric-color);
+  font-size: 1.15em;
+  margin: 18px 0 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h3.psalm-title {
+  color: var(--rubric-color);
+  font-size: 1.05em;
+  margin: 10px 0 4px;
+  text-align: center;
+}
+
+.rubric {
+  color: var(--rubric-color);
+  font-style: italic;
+  font-size: 0.92em;
+}
+
+.v-sym, .r-sym, .cross, .asterisk {
+  color: var(--rubric-color);
+  font-weight: bold;
+}
+
+.v-num {
+  color: var(--rubric-color);
+  font-size: 0.82em;
+  font-weight: bold;
+  min-width: 16px;
+  display: inline-block;
+  opacity: 0.85;
+}
+
+/* 2-Column Prayer Table */
+table.prayer-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 8px;
+}
+
+table.prayer-table td {
+  vertical-align: top;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table.prayer-table td.col-lat {
+  width: 50%;
+  border-right: 1px solid var(--border-color);
+  padding-right: 8px;
+}
+
+table.prayer-table td.col-vern {
+  width: 50%;
+  padding-left: 8px;
+}
+
+/* Single column mode (when Latin only is selected) */
+body.single-col table.prayer-table td.col-lat {
+  width: 100%;
+  border-right: none;
+  padding-right: 4px;
+}
+
+body.single-col table.prayer-table td.col-vern {
+  display: none;
+}
+
+@media print {
+  .top-bar { display: none; }
+  body { font-size: 11pt; background: white; color: black; }
+  .container { max-width: 100%; padding: 0; }
+}

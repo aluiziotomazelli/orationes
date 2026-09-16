@@ -1,0 +1,183 @@
+// Angelus Dómini Data
+window.ORATIONES_DATA = window.ORATIONES_DATA || {};
+window.ORATIONES_DATA.angelus = {
+  "id": "angelus",
+  "title": {
+    "la": "Angelus Dómini",
+    "pt": "O Angelus",
+    "en": "The Angelus",
+    "es": "El Ángelus"
+  },
+  "subtitle": {
+    "la": "Dicitur flexis génibus, extra tempus paschale.",
+    "pt": "Reza-se de joelhos, fora do tempo pascal.",
+    "en": "Said kneeling, outside of Eastertide.",
+    "es": "Se reza de rodillas, fuera del tiempo pascual."
+  },
+  "sources": [
+    {
+      "name": "Breviarium Romanum"
+    }
+  ],
+  "availableLangs": [
+    { "code": "pt", "label": "Português" },
+    { "code": "en", "label": "English" },
+    { "code": "es", "label": "Español" }
+  ],
+  "items": [
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Ángelus Dómini nuntiávit Maríæ.",
+        "pt": "O Anjo do Senhor anunciou a Maria.",
+        "en": "The Angel of the Lord declared unto Mary.",
+        "es": "El Ángel del Señor anunció a María."
+      },
+      "r": {
+        "la": "Et concépit de Spíritu Sancto.",
+        "pt": "E Ela concebeu do Espírito Santo.",
+        "en": "And she conceived of the Holy Spirit.",
+        "es": "Y concibió por obra del Espírito Santo."
+      }
+    },
+    {
+      "type": "prayer",
+      "name": "Ave Maria",
+      "text": {
+        "la": "Ave, María, grátia plena, Dóminus tecum;<br>benedícta tu in muliéribus,<br>et benedíctus fructus ventris tui, Iesus.<br>Sancta María, Mater Dei,<br>ora pro nobis peccatóribus,<br>nunc et in hora mortis nostræ. Amen.",
+        "pt": "Ave Maria, cheia de graça, o Senhor é convosco;<br>bendita sois vós entre as mulheres,<br>e bendito é o fruto do vosso ventre, Jesus.<br>Santa Maria, Mãe de Deus,<br>rogai por nós, pecadores,<br>agora e na hora de nossa morte. Amém.",
+        "en": "Hail Mary, full of grace, the Lord is with thee;<br>blessed art thou among women,<br>and blessed is the fruit of thy womb, Jesus.<br>Holy Mary, Mother of God,<br>pray for us sinners,<br>now and at the hour of our death. Amen.",
+        "es": "Dios te salve, María, llena eres de gracia, el Señor es contigo;<br>bendita tú eres entre todas las mujeres,<br>y bendito es el fruto de tu vientre, Jesús.<br>Santa María, Madre de Dios,<br>ruega por nosotros, pecadores,<br>ahora y en la hora de nuestra muerte. Amén."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Ecce ancílla Dómini.",
+        "pt": "Eis aqui a serva do Senhor.",
+        "en": "Behold the handmaid of the Lord.",
+        "es": "He aquí la esclava del Señor."
+      },
+      "r": {
+        "la": "Fiat mihi secúndum verbum tuum.",
+        "pt": "Faça-se em mim segundo a vossa palavra.",
+        "en": "Be it done unto me according to thy word.",
+        "es": "Hágase en mí según tu palabra."
+      }
+    },
+    {
+      "type": "prayer_ref",
+      "text": {
+        "la": "Ave, María...",
+        "pt": "Ave Maria...",
+        "en": "Hail Mary...",
+        "es": "Dios te salve, María..."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Et Verbum caro factum est. (genuflectitur)",
+        "pt": "E o Verbo se fez carne. (genuflexão)",
+        "en": "And the Word was made flesh. (genuflect)",
+        "es": "Y el Verbo se hizo carne. (genuflexión)"
+      },
+      "r": {
+        "la": "Et habitávit in nobis.",
+        "pt": "E habitou entre nós.",
+        "en": "And dwelt among us.",
+        "es": "Y habitó entre nosotros."
+      }
+    },
+    {
+      "type": "prayer_ref",
+      "text": {
+        "la": "Ave, María...",
+        "pt": "Ave Maria...",
+        "en": "Hail Mary...",
+        "es": "Dios te salve, María..."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Ora pro nobis, sancta Dei Génitrix.",
+        "pt": "Rogai por nós, santa Mãe de Deus.",
+        "en": "Pray for us, O holy Mother of God.",
+        "es": "Ruega por nosotros, santa Madre de Dios."
+      },
+      "r": {
+        "la": "Ut digni efficiámur promissiónibus Christi.",
+        "pt": "Para que sejamos dignos das promessas de Cristo.",
+        "en": "That we may be made worthy of the promises of Christ.",
+        "es": "Para que seamos dignos de alcanzar las promesas de Cristo."
+      }
+    },
+    {
+      "type": "oratio",
+      "label": {
+        "la": "Orémus.",
+        "pt": "Oremos.",
+        "en": "Let us pray.",
+        "es": "Oremos."
+      },
+      "text": {
+        "la": "Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus; per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum.",
+        "pt": "Derramai, Senhor, nós vos pedimos, a vossa graça em nossas almas: para que nós, que pelo anúncio do Anjo conhecemos a encarnação de Cristo, vosso Filho, pela sua paixão e cruz sejamos conduzidos à glória da ressurreição. Pelo mesmo Cristo, nosso Senhor.",
+        "en": "Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we, to whom the Incarnation of Christ, Thy Son, was made known by the message of an Angel, may by His Passion and Cross be brought to the glory of His Resurrection. Through the same Christ our Lord.",
+        "es": "Derrama, Señor, tu gracia en nuestras almas para que los que, por el anuncio del Ángel, hemos conocido la encarnación de tu Hijo Jesucristo, por su pasión y cruz seamos llevados a la gloria de la resurrección. Por el mismo Jesucristo nuestro Señor."
+      },
+      "amen": {
+        "la": "℟. Amen.",
+        "pt": "℟. Amém.",
+        "en": "℟. Amen.",
+        "es": "℟. Amén."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Glória Patri, et Fílio, et Spirítui Sancto. (ter)",
+        "pt": "Glória ao Pai e ao Filho e ao Espírito Santo. (3x)",
+        "en": "Glory be to the Father, and to the Son, and to the Holy Spirit. (3x)",
+        "es": "Gloria al Padre, y al Hijo, y al Espíritu Santo. (3x)"
+      },
+      "r": {
+        "la": "Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.",
+        "pt": "Assim como era no princípio, agora e sempre, e por todos os séculos dos séculos. Amém.",
+        "en": "As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "es": "Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Réquiem ætérnam dona eis, Dómine.",
+        "pt": "Dai-lhes, Senhor, o descanso eterno.",
+        "en": "Eternal rest grant unto them, O Lord.",
+        "es": "Dales, Señor, el descanso eterno."
+      },
+      "r": {
+        "la": "Et lux perpétua lúceat eis.",
+        "pt": "E a luz perpétua os ilumine.",
+        "en": "And let perpetual light shine upon them.",
+        "es": "Y brille para ellos la luz perpetua."
+      }
+    },
+    {
+      "type": "dialogue",
+      "v": {
+        "la": "Requiéscant in pace.",
+        "pt": "Descansem em paz.",
+        "en": "May they rest in peace.",
+        "es": "Descansen en paz."
+      },
+      "r": {
+        "la": "Amen.",
+        "pt": "Amém.",
+        "en": "Amen.",
+        "es": "Amén."
+      }
+    }
+  ]
+};
