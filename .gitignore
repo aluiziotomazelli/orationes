@@ -6,6 +6,8 @@ Thumbs.db
 *~
 *.swp
 *.tmp
+.~lock.*#
+*.lock
 
 # Python cache
 __pycache__/
