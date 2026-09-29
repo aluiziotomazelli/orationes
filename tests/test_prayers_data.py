@@ -154,7 +154,7 @@ class TestPrayersData(unittest.TestCase):
             prayer_id = data['id']
 
             # Verify that prayer JS is loaded via script tag
-            expected_script = f'src="data/prayers/{prayer_id}.js"'
+            expected_script = f'data/prayers/{prayer_id}.js'
             self.assertIn(expected_script, html, f"index.html does not load script for prayer '{prayer_id}' ({expected_script})")
 
             # Verify that home view contains a card link

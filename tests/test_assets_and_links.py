@@ -54,10 +54,11 @@ class TestAssetsAndLinks(unittest.TestCase):
         self.assertGreater(len(extractor.local_assets), 0, "No local assets found in index.html")
 
         for asset_rel in extractor.local_assets:
-            asset_path = os.path.join(BASE_DIR, asset_rel)
-            with self.subTest(asset=asset_rel):
-                self.assertTrue(os.path.exists(asset_path), f"Asset referenced in index.html does not exist: {asset_rel}")
-                self.assertGreater(os.path.getsize(asset_path), 0, f"Asset file is empty: {asset_rel}")
+            clean_rel = asset_rel.split('?')[0]
+            asset_path = os.path.join(BASE_DIR, clean_rel)
+            with self.subTest(asset=clean_rel):
+                self.assertTrue(os.path.exists(asset_path), f"Asset referenced in index.html does not exist: {clean_rel}")
+                self.assertGreater(os.path.getsize(asset_path), 0, f"Asset file is empty: {clean_rel}")
 
     def test_css_structure_and_variables(self):
         """Verifies that style.css exists and defines critical theme variables."""
