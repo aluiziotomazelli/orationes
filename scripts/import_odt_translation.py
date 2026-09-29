@@ -120,8 +120,23 @@ def import_odt(odt_path, prayer_id, lang_code="fr", lang_label="Français"):
                     val = extract_text_from_cell(cells[1])
                     if val:
                         lines = [l.strip() for l in val.split('\n') if l.strip()]
-                        if lines:
+                        if len(lines) == 1:
                             item['text'][lang_code] = lines[0]
+                        elif len(lines) >= 2:
+                            body_lines = lines
+                            # Check label
+                            if len(lines[0]) <= 30 and not lines[0].endswith((';', ':')):
+                                lbl = lines[0].rstrip(',').rstrip('.') + '.'
+                                item['label'][lang_code] = lbl
+                                body_lines = lines[1:]
+
+                            # Check amen at end
+                            if body_lines and (body_lines[-1].startswith(('℟', 'R.', 'Amen')) or 'Amen' in body_lines[-1]):
+                                item['amen'][lang_code] = body_lines[-1]
+                                body_lines = body_lines[:-1]
+
+                            if body_lines:
+                                item['text'][lang_code] = " ".join(body_lines)
                 table_index += 1
 
     # Add language to availableLangs if not already present
