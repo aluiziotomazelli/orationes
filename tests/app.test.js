@@ -184,6 +184,18 @@ describe('Orationes App Engine (app.js)', () => {
       expect(prayerBody.querySelectorAll('tr').length).toBe(12);
     });
 
+    it('should load and render Credo Nicaenum correctly', () => {
+      const { window, document } = createTestEnvironment('credo_nicaenum');
+
+      const prayerTitle = document.getElementById('prayerTitle');
+      const prayerFooter = document.getElementById('prayerFooter');
+      const prayerBody = document.getElementById('prayerBody');
+
+      expect(prayerTitle.textContent).toContain('Sýmbolum Nicænum');
+      expect(prayerFooter.innerHTML).toContain('Missale Romanum');
+      expect(prayerBody.querySelectorAll('tr').length).toBeGreaterThan(15);
+    });
+
     it('should load and render Salve Regina correctly', () => {
       const { window, document } = createTestEnvironment('salve_regina');
 
