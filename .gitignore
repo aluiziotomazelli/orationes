@@ -8,6 +8,7 @@ Thumbs.db
 *.tmp
 .~lock.*#
 *.lock
+temp/
 
 # Python cache
 __pycache__/

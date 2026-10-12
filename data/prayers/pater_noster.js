@@ -1,0 +1,96 @@
+// Pater Noster Data
+window.ORATIONES_DATA = window.ORATIONES_DATA || {};
+window.ORATIONES_DATA.pater_noster = {
+  "id": "pater_noster",
+  "title": {
+    "la": "Pater Noster",
+    "pt": "Pai Nosso"
+  },
+  "subtitle": {
+    "la": "Orátio Domínica",
+    "pt": "A Oração do Senhor"
+  },
+  "sources": [
+    {
+      "name": "Missale Romanum"
+    }
+  ],
+  "availableLangs": [
+    {
+      "code": "pt",
+      "label": "Português"
+    }
+  ],
+  "items": [
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Pater noster, qui es in cælis:",
+        "pt": "Pai nosso, que estais nos céus:"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "sanctificétur nomen tuum:",
+        "pt": "santificado seja o vosso nome:"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "advéniat regnum tuum:",
+        "pt": "venha a nós o vosso reino:"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "fiat volúntas tua, sicut in cælo et in terra.",
+        "pt": "seja feita a vossa vontade, assim na terra como no céu."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Panem nostrum cotidiánum da nobis hódie:",
+        "pt": "O pão nosso de cada dia nos dai hoje:"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "et dimítte nobis débita nostra,",
+        "pt": "e perdoai-nos as nossas dívidas,"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "sicut et nos dimíttimus debitóribus nostris.",
+        "pt": "assim como nós perdoamos aos nossos devedores."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Et ne nos indúcas in tentatiónem.",
+        "pt": "E não nos deixeis cair em tentação."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Sed líbera nos a malo.",
+        "pt": "Mas livrai-nos do mal."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Amen.",
+        "pt": "Amém."
+      }
+    }
+  ]
+};

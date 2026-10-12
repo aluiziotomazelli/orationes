@@ -4,8 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const htmlPath = path.resolve(__dirname, '../index.html');
-const angelusJsPath = path.resolve(__dirname, '../data/prayers/angelus.js');
-const completoriumJsPath = path.resolve(__dirname, '../data/prayers/completorium.js');
+const prayersDir = path.resolve(__dirname, '../data/prayers');
 const appJsPath = path.resolve(__dirname, '../app.js');
 
 function createTestEnvironment(initialHash = '') {
@@ -31,9 +30,11 @@ function createTestEnvironment(initialHash = '') {
     };
   };
 
-  // Execute prayer data scripts in window context
-  window.eval(fs.readFileSync(angelusJsPath, 'utf-8'));
-  window.eval(fs.readFileSync(completoriumJsPath, 'utf-8'));
+  // Execute all prayer data scripts in window context
+  const prayerFiles = fs.readdirSync(prayersDir).filter(f => f.endsWith('.js'));
+  prayerFiles.forEach(file => {
+    window.eval(fs.readFileSync(path.join(prayersDir, file), 'utf-8'));
+  });
   window.eval(fs.readFileSync(appJsPath, 'utf-8'));
 
   // Trigger DOMContentLoaded
@@ -133,6 +134,18 @@ describe('Orationes App Engine (app.js)', () => {
 
       expect(prayerTitle.textContent).toContain('Ad Completorium');
       expect(prayerFooter.innerHTML).toContain('Divinum Officium');
+    });
+
+    it('should load and render Pater Noster correctly', () => {
+      const { window, document } = createTestEnvironment('pater_noster');
+
+      const prayerTitle = document.getElementById('prayerTitle');
+      const prayerFooter = document.getElementById('prayerFooter');
+      const prayerBody = document.getElementById('prayerBody');
+
+      expect(prayerTitle.textContent).toContain('Pater Noster');
+      expect(prayerFooter.innerHTML).toContain('Missale Romanum');
+      expect(prayerBody.querySelectorAll('tr').length).toBe(10);
     });
 
     it('should toggle single-column Latin mode when language is set to none', () => {
