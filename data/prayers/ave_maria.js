@@ -1,0 +1,104 @@
+// Ave María Data
+window.ORATIONES_DATA = window.ORATIONES_DATA || {};
+window.ORATIONES_DATA.ave_maria = {
+  "id": "ave_maria",
+  "title": {
+    "la": "Ave María",
+    "pt": "Ave Maria",
+    "en": "Hail Mary",
+    "es": "Ave María",
+    "fr": "Je vous salue Marie"
+  },
+  "subtitle": {
+    "la": "Salutátio Angélica",
+    "pt": "A Saudação Angélica",
+    "en": "The Angelic Salutation",
+    "es": "La Salutación Angélica",
+    "fr": "La Salutation Angélique"
+  },
+  "sources": [
+    {
+      "name": "Biblia Sacra (Lc 1, 28.42) / Breviarium Romanum"
+    }
+  ],
+  "availableLangs": [
+    {
+      "code": "pt",
+      "label": "Português"
+    },
+    {
+      "code": "en",
+      "label": "English"
+    },
+    {
+      "code": "es",
+      "label": "Español"
+    },
+    {
+      "code": "fr",
+      "label": "Français"
+    }
+  ],
+  "items": [
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Ave, María, grátia plena, Dóminus tecum;",
+        "pt": "Ave Maria, cheia de graça, o Senhor é convosco;",
+        "en": "Hail Mary, full of grace, the Lord is with thee;",
+        "es": "Dios te salve, María, llena eres de gracia, el Señor es contigo;",
+        "fr": "Je vous salue, Marie, pleine de grâce, le Seigneur est avec vous ;"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "benedícta tu in muliéribus,",
+        "pt": "bendita sois vós entre as mulheres,",
+        "en": "blessed art thou among women,",
+        "es": "bendita tú eres entre todas las mujeres,",
+        "fr": "vous êtes bénie entre toutes les femmes ;"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "et benedíctus fructus ventris tui, Iesus.",
+        "pt": "e bendito é o fruto do vosso ventre, Jesus.",
+        "en": "and blessed is the fruit of thy womb, Jesus.",
+        "es": "y bendito es el fruto de tu vientre, Jesús.",
+        "fr": "et Jésus, le fruit de vos entrailles, est béni."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Sancta María, Mater Dei,",
+        "pt": "Santa Maria, Mãe de Deus,",
+        "en": "Holy Mary, Mother of God,",
+        "es": "Santa María, Madre de Dios,",
+        "fr": "Sainte Marie, Mère de Dieu,"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "ora pro nobis peccatóribus,",
+        "pt": "rogai por nós, pecadores,",
+        "en": "pray for us sinners,",
+        "es": "ruega por nosotros, pecadores,",
+        "fr": "priez pour nous, pauvres pécheurs,"
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "nunc et in hora mortis nostræ. Amen.",
+        "pt": "agora e na hora de nossa morte. Amém.",
+        "en": "now and at the hour of our death. Amen.",
+        "es": "ahora y en la hora de nuestra muerte. Amén.",
+        "fr": "maintenant et à l’heure de notre mort. Amen."
+      }
+    }
+  ]
+};
