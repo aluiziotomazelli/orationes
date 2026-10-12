@@ -30,6 +30,9 @@ function createTestEnvironment(initialHash = '') {
     };
   };
 
+  // Mock scrollTo for JSDOM
+  window.scrollTo = () => {};
+
   // Execute all prayer data scripts in window context
   const prayerFiles = fs.readdirSync(prayersDir).filter(f => f.endsWith('.js'));
   prayerFiles.forEach(file => {

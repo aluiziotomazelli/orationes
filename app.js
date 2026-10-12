@@ -48,6 +48,7 @@
     document.getElementById('navBrand').href = '#';
     document.getElementById('langSelect').style.display = 'none';
     document.title = 'Orationes & Officium Divinum';
+    window.scrollTo(0, 0);
   }
 
   function loadPrayer(prayerId) {
@@ -59,6 +60,7 @@
     document.getElementById('prayerView').style.display = 'block';
     document.getElementById('navBrand').innerHTML = `← ${data.title.la}`;
     document.getElementById('navBrand').href = '#';
+    window.scrollTo(0, 0);
 
     // Populate language selector for this specific prayer
     const langSelect = document.getElementById('langSelect');
