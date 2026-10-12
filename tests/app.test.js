@@ -223,6 +223,20 @@ describe('Orationes App Engine (app.js)', () => {
       expect(prayerBody.querySelectorAll('tr').length).toBe(4);
     });
 
+    it('should load and render Rosarium correctly with links', () => {
+      const { window, document } = createTestEnvironment('rosarium');
+
+      const prayerTitle = document.getElementById('prayerTitle');
+      const prayerFooter = document.getElementById('prayerFooter');
+      const prayerBody = document.getElementById('prayerBody');
+
+      expect(prayerTitle.textContent).toContain('Sanctíssimum Rosárium');
+      expect(prayerFooter.innerHTML).toContain('Secretum Rosarii');
+      expect(prayerBody.querySelectorAll('tr').length).toBeGreaterThan(50);
+      expect(prayerBody.innerHTML).toContain('href="#pater_noster"');
+      expect(prayerBody.innerHTML).toContain('href="#ave_maria"');
+    });
+
     it('should toggle single-column Latin mode when language is set to none', () => {
       const { window, document } = createTestEnvironment('angelus');
 
