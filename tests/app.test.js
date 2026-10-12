@@ -148,6 +148,18 @@ describe('Orationes App Engine (app.js)', () => {
       expect(prayerBody.querySelectorAll('tr').length).toBe(10);
     });
 
+    it('should load and render Gloria Patri correctly', () => {
+      const { window, document } = createTestEnvironment('gloria_patri');
+
+      const prayerTitle = document.getElementById('prayerTitle');
+      const prayerFooter = document.getElementById('prayerFooter');
+      const prayerBody = document.getElementById('prayerBody');
+
+      expect(prayerTitle.textContent).toContain('Glória Patri');
+      expect(prayerFooter.innerHTML).toContain('Breviarium Romanum');
+      expect(prayerBody.querySelectorAll('tr').length).toBe(2);
+    });
+
     it('should toggle single-column Latin mode when language is set to none', () => {
       const { window, document } = createTestEnvironment('angelus');
 
