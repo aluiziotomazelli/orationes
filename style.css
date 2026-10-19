@@ -132,6 +132,19 @@ body {
   font-size: 1.05em;
 }
 
+.home-banner {
+  margin: 14px 0 6px;
+}
+
+.home-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
 .card-list {
   display: flex;
   flex-direction: column;
