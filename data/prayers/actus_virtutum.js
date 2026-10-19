@@ -1,4 +1,3 @@
-// Actus Virtútum Data
 window.ORATIONES_DATA = window.ORATIONES_DATA || {};
 window.ORATIONES_DATA.actus_virtutum = {
   "id": "actus_virtutum",
@@ -18,7 +17,10 @@ window.ORATIONES_DATA.actus_virtutum = {
   },
   "sources": [
     {
-      "name": "Manuale Precum / De Imitatione Christi (Thomas a Kempis)"
+      "name": "Missal Romano (D. Crisóstomo d'Aguiar, OSB — Imprimatur Mechliniæ 1938, p. 26–27)"
+    },
+    {
+      "name": "De Imitatióne Christi, lib. III, cap. 8 et 14 (Thomas a Kempis)"
     }
   ],
   "availableLangs": [

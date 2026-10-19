@@ -47,3 +47,9 @@
 | Pǽnitet me quod unquam Te offénderim. | Pesa-me de Vos ter ofendido. |
 | Iam státuo serváre ómnia mandáta tua. | Quero d’ora avante observar todos os vossos mandamentos. |
 | In hac caritáte vívere et mori volo ac státuo. | Nesta caridade quero e determino viver e morrer. |
+
+---
+
+### Fontes Bibliográficas
+- **Atos de Fé, de Esperança e de Caridade:** *Missal Romano — Texto Latino, Versão Portuguesa e Anotações de D. Crisóstomo d'Aguiar* (Monge Beneditino), Administração do «Lar Catholico», Juiz de Fora — Minas (Imprimatur: *Mechliniæ, 18 Octobris 1938 — ✠ J.-E. Card. Van Roey, Arch. Mechliniensis*), p. 26–27.
+- **Ato de Humildade:** *De Imitatióne Christi*, lib. III, cap. 8 et 14 (Thomas a Kempis).

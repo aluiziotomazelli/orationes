@@ -12,3 +12,6 @@ Spero, Deus meus, per passiónem et mérita Iesu Christi, vitam ætérnam et óm
 
 ## Actus Caritátis
 Amo te, Deus meus, super ómnia bona, ex toto corde. Amo próximum meum sicut meípsum propter Te, quia in te ipso es summe bonus, et ipsa bónitas infiníta, et ídeo dignus ut améris ab ómnibus. Ament te omnes hómines; laudent Te omnes creatúræ. Útinam ego Te plus amárem. Pǽnitet me quod unquam Te offénderim. Iam státuo serváre ómnia mandáta tua. In hac caritáte vívere et mori volo ac státuo.
+
+---
+*Fontes: Missal Romano (D. Crisóstomo d'Aguiar, OSB; Imprimatur: Mechliniæ, 18 Octobris 1938 — ✠ J.-E. Card. Van Roey), p. 26–27; De Imitatióne Christi, lib. III, cap. 8 et 14 (Thomas a Kempis).*
