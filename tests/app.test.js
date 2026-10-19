@@ -249,6 +249,18 @@ describe('Orationes App Engine (app.js)', () => {
       expect(prayerBody.querySelectorAll('tr').length).toBeGreaterThan(15);
     });
 
+    it('should load and render Veni Sancte Spiritus correctly', () => {
+      const { window, document } = createTestEnvironment('veni_sancte_spiritus');
+
+      const prayerTitle = document.getElementById('prayerTitle');
+      const prayerFooter = document.getElementById('prayerFooter');
+      const prayerBody = document.getElementById('prayerBody');
+
+      expect(prayerTitle.textContent).toContain('Veni, Sancte Spíritus');
+      expect(prayerFooter.innerHTML).toContain('Breviarium Romanum');
+      expect(prayerBody.querySelectorAll('tr').length).toBeGreaterThan(0);
+    });
+
     it('should toggle single-column Latin mode when language is set to none', () => {
       const { window, document } = createTestEnvironment('angelus');
 
