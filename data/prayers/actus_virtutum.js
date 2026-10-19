@@ -10,11 +10,11 @@ window.ORATIONES_DATA.actus_virtutum = {
     "fr": "Actes des Vertus"
   },
   "subtitle": {
-    "la": "Actus Fídei, Spei, Caritátis et Humilitátis",
-    "pt": "Atos de Fé, de Esperança, de Caridade e de Humildade",
-    "en": "Acts of Faith, Hope, Charity, and Humility",
-    "es": "Actos de Fe, Esperanza, Caridad y Humildad",
-    "fr": "Actes de Foi, d'Espérance, de Charité et d'Humilité"
+    "la": "Actus Fídei, Humilitátis, Spei et Caritátis",
+    "pt": "Atos de Fé, de Humildade, de Esperança e de Caridade",
+    "en": "Acts of Faith, Humility, Hope, and Charity",
+    "es": "Actos de Fe, Humildad, Esperanza y Caridad",
+    "fr": "Actes de Foi, d'Humilité, d'Espérance et de Charité"
   },
   "sources": [
     {
@@ -28,13 +28,6 @@ window.ORATIONES_DATA.actus_virtutum = {
     }
   ],
   "items": [
-    {
-      "type": "rubric",
-      "text": {
-        "la": "Dizei os actos de fé, de esperança e de caridade, e terminai com a recitação do Angelus.",
-        "pt": "Dizei os atos de fé, de esperança e de caridade, e terminai com a recitação do Angelus."
-      }
-    },
     {
       "type": "section_header",
       "title": {
@@ -61,6 +54,42 @@ window.ORATIONES_DATA.actus_virtutum = {
       "text": {
         "la": "In hac fide vívere et mori volo ac státuo.",
         "pt": "Nesta fé quero e determino viver e morrer."
+      }
+    },
+    {
+      "type": "section_header",
+      "title": {
+        "la": "Actus Humilitátis",
+        "pt": "Ato de Humildade"
+      },
+      "sub": "De Imitatióne Christi (Thomas a Kempis)"
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Dómine Deus meus, quid sum ego? Ecce, pulvis et cinis, ac purum níhilum coram Te.",
+        "pt": "Senhor meu Deus, o que sou eu? Eis que sou pó e cinza, e puro nada diante de Vós."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Nullis méritis meis, sed ex sola et infiníta bonitáte tua me de níhilo creásti, et in hac vita usque in hanc horam conservásti.",
+        "pt": "Sem nenhum mérito meu, mas por vossa única e infinita bondade, criastes-me do nada e conservastes-me nesta vida até esta hora."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Nisi me adiuvísset grátia tua immeríta, iam dudum in inférno damnáti essémus propter peccáta mea.",
+        "pt": "Se não me tivesse socorrido a vossa graça imerecida, há muito tempo já eu deveria estar condenado no inferno por causa dos meus pecados."
+      }
+    },
+    {
+      "type": "prayer",
+      "text": {
+        "la": "Mihi nihil áliud debétur nisi confúsio et pœna; Tibi autem soli honor, glória et gratiárum áctio in sǽcula sæculórum. Amen.",
+        "pt": "A mim nada mais é devido senão confusão e castigo; a Vós somente a honra, a glória e a ação de graças pelos séculos dos séculos. Amém."
       }
     },
     {
@@ -145,42 +174,6 @@ window.ORATIONES_DATA.actus_virtutum = {
       "text": {
         "la": "In hac caritáte vívere et mori volo ac státuo.",
         "pt": "Nesta caridade quero e determino viver e morrer."
-      }
-    },
-    {
-      "type": "section_header",
-      "title": {
-        "la": "Actus Humilitátis",
-        "pt": "Ato de Humildade"
-      },
-      "sub": "De Imitatióne Christi (Thomas a Kempis)"
-    },
-    {
-      "type": "prayer",
-      "text": {
-        "la": "Dómine Deus meus, quid sum ego? Ecce, pulvis et cinis, ac purum níhilum coram Te.",
-        "pt": "Senhor meu Deus, o que sou eu? Eis que sou pó e cinza, e puro nada diante de Vós."
-      }
-    },
-    {
-      "type": "prayer",
-      "text": {
-        "la": "Nullis méritis meis, sed ex sola et infiníta bonitáte tua me de níhilo creásti, et in hac vita usque in hanc horam conservásti.",
-        "pt": "Sem nenhum mérito meu, mas por vossa única e infinita bondade, criastes-me do nada e conservastes-me nesta vida até esta hora."
-      }
-    },
-    {
-      "type": "prayer",
-      "text": {
-        "la": "Nisi me adiuvísset grátia tua immeríta, iam dudum in inférno damnáti essémus propter peccáta mea.",
-        "pt": "Se não me tivesse socorrido a vossa graça imerecida, há muito tempo já eu deveria estar condenado no inferno por causa dos meus pecados."
-      }
-    },
-    {
-      "type": "prayer",
-      "text": {
-        "la": "Mihi nihil áliud debétur nisi confúsio et pœna; Tibi autem soli honor, glória et gratiárum áctio in sǽcula sæculórum. Amen.",
-        "pt": "A mim nada mais é devido senão confusão e castigo; a Vós somente a honra, a glória e a ação de graças pelos séculos dos séculos. Amém."
       }
     }
   ]
